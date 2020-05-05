@@ -1,0 +1,354 @@
+{
+  "SchemeID": "Scheme-fffffc6e",
+  "Name": "DADAAB WS - Correct Dataset",
+  "Version": "0.0.0.1",
+  "Codes": [
+    {
+      "CodeID": "code-9919ab80",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab household language",
+      "StringValue": "dadaab_household_language",
+      "NumericValue": 0,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab household language"
+      ]
+    },
+    {
+      "CodeID": "code-0498b4c2",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab age",
+      "StringValue": "dadaab_age",
+      "NumericValue": 1,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab age"
+      ]
+    },
+    {
+      "CodeID": "code-bc414c1a",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab gender",
+      "StringValue": "dadaab_gender",
+      "NumericValue": 2,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab gender"
+      ]
+    },
+    {
+      "CodeID": "code-6c0702bb",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab location",
+      "StringValue": "dadaab_location",
+      "NumericValue": 3,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab location"
+      ]
+    },
+    {
+      "CodeID": "code-762e2db9",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab nationality",
+      "StringValue": "dadaab_nationality",
+      "NumericValue": 4,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab nationality"
+      ]
+    },
+    {
+      "CodeID": "code-685c35a0",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab s01e01",
+      "StringValue": "dadaab_s01e01",
+      "NumericValue": 5,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab s01e01"
+      ]
+    },
+    {
+      "CodeID": "code-12003b9b",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab s01e02",
+      "StringValue": "dadaab_s01e02",
+      "NumericValue": 6,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab s01e02"
+      ]
+    },
+    {
+      "CodeID": "code-e3dc7823",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab s01e03",
+      "StringValue": "dadaab_s01e03",
+      "NumericValue": 7,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab s01e03"
+      ]
+    },
+    {
+      "CodeID": "code-1b2e6882",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab s01e04",
+      "StringValue": "dadaab_s01e04",
+      "NumericValue": 8,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab s01e04"
+      ]
+    },
+    {
+      "CodeID": "code-401b6cc9",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab s01e05",
+      "StringValue": "dadaab_s01e05",
+      "NumericValue": 9,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab s01e05"
+      ]
+    },
+    {
+      "CodeID": "code-afc32d63",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab s01e06",
+      "StringValue": "dadaab_s01e06",
+      "NumericValue": 10,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab s01e06"
+      ]
+    },
+    {
+      "CodeID": "code-1b262084",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab s01e07",
+      "StringValue": "dadaab_s01e07",
+      "NumericValue": 11,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab s01e07"
+      ]
+    },
+    {
+      "CodeID": "code-3bf620g4",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab s01 intro",
+      "StringValue": "dadaab_s01_intro",
+      "NumericValue": 12,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab s01 intro"
+
+      ]
+    },
+    {
+      "CodeID": "code-62e86a77",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab girls education champions",
+      "StringValue": "dadaab_girls_education_champions",
+      "NumericValue": 13,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab girls education champions"
+      ]
+    },
+    {
+      "CodeID": "code-e24f1e4a",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab encouragement for boys",
+      "StringValue": "dadaab_encouragement_for_boys",
+      "NumericValue": 14,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab encouragement for boys"
+      ]
+    },
+    {
+      "CodeID": "code-5c606074",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab unmarried fathers community view",
+      "StringValue": "dadaab_unmarried_fathers_community_view",
+      "NumericValue": 15,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab unmarried fathers community view"
+      ]
+    },
+    {
+      "CodeID": "code-90616cb5",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab lessons learnt",
+      "StringValue": "dadaab_lessons_learnt",
+      "NumericValue": 16,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab lessons learnt"
+      ]
+    },
+    {
+      "CodeID": "code-e3c25a49",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab show suggestions",
+      "StringValue": "dadaab_show_suggestions",
+      "NumericValue": 17,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab show suggestions"
+         ]
+    },
+    {
+      "CodeID": "code-bdd2b90b",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab show suggestions",
+      "StringValue": "dadaab_show_suggestions",
+      "NumericValue": 18,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "dadaab show suggestions"
+         ]
+    },
+    {
+      "CodeID": "code-01afe8b3",
+      "CodeType": "Normal",
+      "DisplayText": "covid19 adaptation dadaab s01e01",
+      "StringValue": "covid19 adaptation dadaab s01e01",
+      "NumericValue": 19,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "covid19 adaptation dadaab s01e01"
+         ]
+    },
+    {
+      "CodeID": "code-2d23074e",
+      "CodeType": "Normal",
+      "DisplayText": "covid19 adaptation dadaab s01e02",
+      "StringValue": "covid19 adaptation dadaab s01e02",
+      "NumericValue": 20,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "covid19 adaptation dadaab s01e02"
+         ]
+    },
+    {
+      "CodeID": "code-910ff67c",
+      "CodeType": "Normal",
+      "DisplayText": "covid19 adaptation dadaab s01e03",
+      "StringValue": "covid19 adaptation dadaab s01e03",
+      "NumericValue": 21,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "covid19 adaptation dadaab s01e03"
+         ]
+    },
+    {
+      "CodeID": "code-7a0db7d8",
+      "CodeType": "Normal",
+      "DisplayText": "covid19 adaptation dadaab s01e04",
+      "StringValue": "covid19 adaptation dadaab s01e04",
+      "NumericValue": 22,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "covid19 adaptation dadaab s01e04"
+         ]
+    },
+     {
+      "CodeID": "code-21ae444d",
+      "CodeType": "Normal",
+      "DisplayText": "covid19 adaptation dadaab s01e05",
+      "StringValue": "covid19 adaptation dadaab s01e05",
+      "NumericValue": 23,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "covid19 adaptation dadaab s01e05"
+         ]
+    },
+    {
+      "CodeID": "code-5aa022b9",
+      "CodeType": "Normal",
+      "DisplayText": "covid19 adaptation dadaab s01e06",
+      "StringValue": "covid19 adaptation dadaab s01e06",
+      "NumericValue": 24,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "covid19 adaptation dadaab s01e06"
+         ]
+    },
+    {
+      "CodeID": "code-66ed1bc2",
+      "CodeType": "Normal",
+      "DisplayText": "covid19 adaptation dadaab s01e07",
+      "StringValue": "covid19 adaptation dadaab s01e07",
+      "NumericValue": 25,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "covid19 adaptation dadaab s01e07"
+         ]
+    },
+    {
+      "CodeID": "code-c914f266",
+      "CodeType": "Normal",
+      "DisplayText": "covid19 adaptation dadaab s01e08",
+      "StringValue": "covid19 adaptation dadaab s01e08",
+      "NumericValue": 26,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "covid19 adaptation dadaab s01e08"
+         ]
+    },
+    {
+      "CodeID": "code-6429437b",
+      "CodeType": "Normal",
+      "DisplayText": "covid19 adaptation dadaab s01e09",
+      "StringValue": "covid19 adaptation dadaab s01e09",
+      "NumericValue": 27,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "covid19 adaptation dadaab s01e09"
+         ]
+    },
+    {
+      "CodeID": "code-9cf9fe3b",
+      "CodeType": "Normal",
+      "DisplayText": "covid19 adaptation dadaab s01e10",
+      "StringValue": "covid19 adaptation dadaab s01e10",
+      "NumericValue": 28,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "covid19 adaptation dadaab s01e10"
+         ]
+    },
+    {
+      "CodeID": "code-NC-42f1d983",
+      "CodeType": "Control",
+      "ControlCode": "NC",
+      "DisplayText": "NC (not coded)",
+      "NumericValue": -30,
+      "StringValue": "NC",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NR-5e3eee23",
+      "CodeType": "Control",
+      "ControlCode": "NR",
+      "DisplayText": "NR (not reviewed)",
+      "NumericValue": -40,
+      "StringValue": "NR",
+      "VisibleInCoda": false
+    },
+    {
+      "CodeID": "code-CE-016c1e22",
+      "CodeType": "Control",
+      "ControlCode": "CE",
+      "DisplayText": "CE (coding error)",
+      "NumericValue": -110,
+      "StringValue": "CE",
+      "VisibleInCoda": false
+    }
+  ]
+}
