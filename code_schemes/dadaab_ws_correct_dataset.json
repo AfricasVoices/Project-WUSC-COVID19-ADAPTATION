@@ -203,22 +203,11 @@
          ]
     },
     {
-      "CodeID": "code-bdd2b90b",
-      "CodeType": "Normal",
-      "DisplayText": "dadaab show suggestions",
-      "StringValue": "dadaab_show_suggestions",
-      "NumericValue": 18,
-      "VisibleInCoda": true,
-      "MatchValues": [
-        "dadaab show suggestions"
-         ]
-    },
-    {
       "CodeID": "code-01afe8b3",
       "CodeType": "Normal",
       "DisplayText": "covid19 adaptation dadaab s01e01",
       "StringValue": "covid19 adaptation dadaab s01e01",
-      "NumericValue": 19,
+      "NumericValue": 18,
       "VisibleInCoda": true,
       "MatchValues": [
         "covid19 adaptation dadaab s01e01"
@@ -229,7 +218,7 @@
       "CodeType": "Normal",
       "DisplayText": "covid19 adaptation dadaab s01e02",
       "StringValue": "covid19 adaptation dadaab s01e02",
-      "NumericValue": 20,
+      "NumericValue": 19,
       "VisibleInCoda": true,
       "MatchValues": [
         "covid19 adaptation dadaab s01e02"
@@ -240,7 +229,7 @@
       "CodeType": "Normal",
       "DisplayText": "covid19 adaptation dadaab s01e03",
       "StringValue": "covid19 adaptation dadaab s01e03",
-      "NumericValue": 21,
+      "NumericValue": 20,
       "VisibleInCoda": true,
       "MatchValues": [
         "covid19 adaptation dadaab s01e03"
@@ -251,7 +240,7 @@
       "CodeType": "Normal",
       "DisplayText": "covid19 adaptation dadaab s01e04",
       "StringValue": "covid19 adaptation dadaab s01e04",
-      "NumericValue": 22,
+      "NumericValue": 21,
       "VisibleInCoda": true,
       "MatchValues": [
         "covid19 adaptation dadaab s01e04"
@@ -262,7 +251,7 @@
       "CodeType": "Normal",
       "DisplayText": "covid19 adaptation dadaab s01e05",
       "StringValue": "covid19 adaptation dadaab s01e05",
-      "NumericValue": 23,
+      "NumericValue": 22,
       "VisibleInCoda": true,
       "MatchValues": [
         "covid19 adaptation dadaab s01e05"
@@ -273,7 +262,7 @@
       "CodeType": "Normal",
       "DisplayText": "covid19 adaptation dadaab s01e06",
       "StringValue": "covid19 adaptation dadaab s01e06",
-      "NumericValue": 24,
+      "NumericValue": 23,
       "VisibleInCoda": true,
       "MatchValues": [
         "covid19 adaptation dadaab s01e06"
@@ -284,7 +273,7 @@
       "CodeType": "Normal",
       "DisplayText": "covid19 adaptation dadaab s01e07",
       "StringValue": "covid19 adaptation dadaab s01e07",
-      "NumericValue": 25,
+      "NumericValue": 24,
       "VisibleInCoda": true,
       "MatchValues": [
         "covid19 adaptation dadaab s01e07"
@@ -295,7 +284,7 @@
       "CodeType": "Normal",
       "DisplayText": "covid19 adaptation dadaab s01e08",
       "StringValue": "covid19 adaptation dadaab s01e08",
-      "NumericValue": 26,
+      "NumericValue": 25,
       "VisibleInCoda": true,
       "MatchValues": [
         "covid19 adaptation dadaab s01e08"
@@ -306,7 +295,7 @@
       "CodeType": "Normal",
       "DisplayText": "covid19 adaptation dadaab s01e09",
       "StringValue": "covid19 adaptation dadaab s01e09",
-      "NumericValue": 27,
+      "NumericValue": 26,
       "VisibleInCoda": true,
       "MatchValues": [
         "covid19 adaptation dadaab s01e09"
@@ -317,7 +306,7 @@
       "CodeType": "Normal",
       "DisplayText": "covid19 adaptation dadaab s01e10",
       "StringValue": "covid19 adaptation dadaab s01e10",
-      "NumericValue": 28,
+      "NumericValue": 27,
       "VisibleInCoda": true,
       "MatchValues": [
         "covid19 adaptation dadaab s01e10"
