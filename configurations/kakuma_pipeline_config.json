@@ -1,0 +1,100 @@
+{
+  "RawDataSources": [
+    {
+      "SourceType": "RapidPro",
+      "Domain": "textit.in",
+      "TokenFileURL": "gs://avf-credentials/wusc-keep-II-kakuma-textit-token.txt",
+      "ContactsFileName": "wusc_kakuma_contacts",
+      "ActivationFlowNames": [
+        "wusc_covid19_adaptation_s01e01_kakuma_activation"
+      ],
+      "SurveyFlowNames": [
+        "wusc_keep_ii_kakuma_demogs",
+        "wusc_covid19_adaptation_kakuma_demogs"
+      ],
+      "TestContactUUIDs": [
+        "84f1c3bc-596e-455e-b5f6-ce16640e9b95",
+        "965a6702-08b9-438d-b234-d2d71b5e7c27",
+        "5f214693-03dc-4867-b440-896bf2ccbb1e",
+        "df4b5e80-2148-4fa6-82c1-307bebc554bc"
+      ]
+    }
+  ],
+  "PhoneNumberUuidTable": {
+    "FirebaseCredentialsFileURL": "gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
+    "TableName": "WUSC_KEEP_II_phone_number_avf_phone_id"
+  },
+  "RapidProKeyRemappings": [
+    {"RapidProKey": "avf_phone_id", "PipelineKey": "uid"},
+    {"RapidProKey": "Rqa_Adaptation_S01E01_Kakuma (Text) - wusc_covid19_adaptation_s01e01_kakuma_activation", "PipelineKey": "rqa_s01e01_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E02_Kakuma (Text) - wusc_covid19_adaptation_s01e02_kakuma_activation", "PipelineKey": "rqa_s01e02_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E03_Kakuma (Text) - wusc_covid19_adaptation_s01e03_kakuma_activation", "PipelineKey": "rqa_s01e03_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E04_Kakuma (Text) - wusc_covid19_adaptation_s01e04_kakuma_activation", "PipelineKey": "rqa_s01e04_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E05_Kakuma (Text) - wusc_covid19_adaptation_s01e05_kakuma_activation", "PipelineKey": "rqa_s01e05_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E06_Kakuma (Text) - wusc_covid19_adaptation_s01e06_kakuma_activation", "PipelineKey": "rqa_s01e06_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E07_Kakuma (Text) - wusc_covid19_adaptation_s01e07_kakuma_activation", "PipelineKey": "rqa_s01e07_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E08_Kakuma (Text) - wusc_covid19_adaptation_s01e08_kakuma_activation", "PipelineKey": "rqa_s01e08_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E09_Kakuma (Text) - wusc_covid19_adaptation_s01e09_kakuma_activation", "PipelineKey": "rqa_s01e09_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E10_Kakuma (Text) - wusc_covid19_adaptation_s01e10_kakuma_activation", "PipelineKey": "rqa_s01e10_raw", "IsActivationMessage": true},
+
+    {"RapidProKey": "Rqa_Adaptation_S01E01_Kakuma (Run ID) - wusc_covid19_adaptation_s01e01_kakuma_activation", "PipelineKey": "rqa_s01e01_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E02_Kakuma (Run ID) - wusc_covid19_adaptation_s01e02_kakuma_activation", "PipelineKey": "rqa_s01e02_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E03_Kakuma (Run ID) - wusc_covid19_adaptation_s01e03_kakuma_activation", "PipelineKey": "rqa_s01e03_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E04_Kakuma (Run ID) - wusc_covid19_adaptation_s01e04_kakuma_activation", "PipelineKey": "rqa_s01e04_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E05_Kakuma (Run ID) - wusc_covid19_adaptation_s01e05_kakuma_activation", "PipelineKey": "rqa_s01e05_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E06_Kakuma (Run ID) - wusc_covid19_adaptation_s01e06_kakuma_activation", "PipelineKey": "rqa_s01e06_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E07_Kakuma (Run ID) - wusc_covid19_adaptation_s01e07_kakuma_activation", "PipelineKey": "rqa_s01e07_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E08_Kakuma (Run ID) - wusc_covid19_adaptation_s01e08_kakuma_activation", "PipelineKey": "rqa_s01e08_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E09_Kakuma (Run ID) - wusc_covid19_adaptation_s01e09_kakuma_activation", "PipelineKey": "rqa_s01e09_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E10_Kakuma (Run ID) - wusc_covid19_adaptation_s01e10_kakuma_activation", "PipelineKey": "rqa_s01e10_run_id"},
+
+    {"RapidProKey": "Rqa_Adaptation_S01E01_Kakuma (Time) - wusc_covid19_adaptation_s01e01_kakuma_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E02_Kakuma (Time) - wusc_covid19_adaptation_s01e02_kakuma_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E03_Kakuma (Time) - wusc_covid19_adaptation_s01e03_kakuma_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E04_Kakuma (Time) - wusc_covid19_adaptation_s01e04_kakuma_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E05_Kakuma (Time) - wusc_covid19_adaptation_s01e05_kakuma_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E06_Kakuma (Time) - wusc_covid19_adaptation_s01e06_kakuma_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E07_Kakuma (Time) - wusc_covid19_adaptation_s01e07_kakuma_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E08_Kakuma (Time) - wusc_covid19_adaptation_s01e08_kakuma_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E09_Kakuma (Time) - wusc_covid19_adaptation_s01e09_kakuma_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E10_Kakuma (Time) - wusc_covid19_adaptation_s01e10_kakuma_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Gender (Text) - wusc_keep_ii_kakuma_demogs", "PipelineKey": "gender_raw"},
+    {"RapidProKey": "Age (Text) - wusc_keep_ii_kakuma_demogs", "PipelineKey": "age_raw"},
+    {"RapidProKey": "Location (Text) - wusc_keep_ii_kakuma_demogs", "PipelineKey": "location_raw"},
+    {"RapidProKey": "Nationality (Text) - wusc_keep_ii_kakuma_demogs", "PipelineKey": "nationality_raw"},
+    {"RapidProKey": "Household_Language (Text) - wusc_keep_ii_kakuma_demogs", "PipelineKey": "household_language_raw"},
+
+    {"RapidProKey": "Gender (Time) - wusc_keep_ii_kakuma_demogs", "PipelineKey": "gender_time"},
+    {"RapidProKey": "Age (Time) - wusc_keep_ii_kakuma_demogs", "PipelineKey": "age_time"},
+    {"RapidProKey": "Location (Time) - wusc_keep_ii_kakuma_demogs", "PipelineKey": "location_time"},
+    {"RapidProKey": "Nationality (Time) - wusc_keep_ii_kakuma_demogs", "PipelineKey": "nationality_time"},
+    {"RapidProKey": "Household_Language (Time) - wusc_keep_ii_kakuma_demogs", "PipelineKey": "household_language_time"},
+
+    {"RapidProKey": "Gender (Text) - wusc_covid19_adaptation_kakuma_demogs", "PipelineKey": "gender_raw"},
+    {"RapidProKey": "Age (Text) - wusc_covid19_adaptation_kakuma_demogs", "PipelineKey": "age_raw"},
+    {"RapidProKey": "Location (Text) - wusc_covid19_adaptation_kakuma_demogs", "PipelineKey": "location_raw"},
+    {"RapidProKey": "Nationality (Text) - wusc_covid19_adaptation_kakuma_demogs", "PipelineKey": "nationality_raw"},
+    {"RapidProKey": "Household_Language (Text) - wusc_covid19_adaptation_kakuma_demogs", "PipelineKey": "household_language_raw"},
+
+    {"RapidProKey": "Gender (Time) - wusc_covid19_adaptation_kakuma_demogs", "PipelineKey": "gender_time"},
+    {"RapidProKey": "Age (Time) - wusc_covid19_adaptation_kakuma_demogs", "PipelineKey": "age_time"},
+    {"RapidProKey": "Location (Time) - wusc_covid19_adaptation_kakuma_demogs", "PipelineKey": "location_time"},
+    {"RapidProKey": "Nationality (Time) - wusc_covid19_adaptation_kakuma_demogs", "PipelineKey": "nationality_time"},
+    {"RapidProKey": "Household_Language (Time) - wusc_covid19_adaptation_kakuma_demogs", "PipelineKey": "household_language_time"}
+  ],
+  "PipelineName": "kakuma_pipeline",
+  "ProjectStartDate": "2020-05-05T00:00:00+03:00",
+  "ProjectEndDate": "2100-01-01T00:00:00+03:00",
+  "FilterTestMessages": false,
+  "MoveWSMessages": false,
+  "DriveUpload": {
+    "DriveCredentialsFileURL": "gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
+    "ProductionUploadPath": "wusc_covid19_adaptation_analysis_outputs/kakuma/wusc_covid19_adaptation_s01_kakuma_production.csv",
+    "MessagesUploadPath": "wusc_covid19_adaptation_analysis_outputs/kakuma/wusc_covid19_adaptation_s01_kakuma_messages.csv",
+    "IndividualsUploadPath": "wusc_covid19_adaptation_analysis_outputs/kakuma/wusc_covid19_adaptation_s01_kakuma_individuals.csv",
+    "AutomatedAnalysisDir": "wusc_covid19_adaptation_analysis_outputs/kakuma/automated_analysis"
+  },
+  "MemoryProfileUploadURLPrefix": "gs://avf-pipeline-logs-performance-nearline/2020/WUSC-COVID19-ADAPTATION/kakuma-memory-",
+  "DataArchiveUploadURLPrefix": "gs://pipeline-execution-backup-archive/2020/WUSC-COVID19-ADAPTATION/kakuma-data-"
+}

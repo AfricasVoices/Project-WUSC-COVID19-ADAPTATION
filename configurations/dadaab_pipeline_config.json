@@ -1,0 +1,101 @@
+{
+  "RawDataSources": [
+    {
+      "SourceType": "RapidPro",
+      "Domain": "textit.in",
+      "TokenFileURL": "gs://avf-credentials/wusc-keep-II-dadaab-textit-token.txt",
+      "ContactsFileName": "wusc_dadaab_contacts",
+      "ActivationFlowNames": [
+        "wusc_covid19_adaptation_s01e01_dadaab_activation"
+      ],
+      "SurveyFlowNames": [
+        "wusc_keep_ii_dadaab_demogs",
+        "wusc_covid19_adaptation_kakuma_demogs"
+      ],
+      "TestContactUUIDs": [
+        "f3e07a4a-4c5d-4032-80f3-c31bcf480dc9",
+        "8aa09c45-5070-4a75-a3b8-75d8519e77b9",
+        "33d8b0c6-4b68-4307-b7ae-0088024b380d",
+        "9c8bc1e6-78bc-40ac-8b11-aec4280b3862",
+        "415bd689-bb41-44f9-90af-8e743cfca35b"
+      ]
+    }
+  ],
+  "PhoneNumberUuidTable": {
+    "FirebaseCredentialsFileURL": "gs://avf-credentials/avf-id-infrastructure-firebase-adminsdk-6xps8-b9173f2bfd.json",
+    "TableName": "WUSC_KEEP_II_phone_number_avf_phone_id"
+  },
+  "RapidProKeyRemappings": [
+    {"RapidProKey": "avf_phone_id", "PipelineKey": "uid"},
+    {"RapidProKey": "Rqa_Adaptation_S01E01_Dadaab (Text) - wusc_covid19_adaptation_s01e01_dadaab_activation", "PipelineKey": "rqa_s01e01_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E02_Dadaab (Text) - wusc_covid19_adaptation_s01e02_dadaab_activation", "PipelineKey": "rqa_s01e02_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E03_Dadaab (Text) - wusc_covid19_adaptation_s01e03_dadaab_activation", "PipelineKey": "rqa_s01e03_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E04_Dadaab (Text) - wusc_covid19_adaptation_s01e04_dadaab_activation", "PipelineKey": "rqa_s01e04_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E05_Dadaab (Text) - wusc_covid19_adaptation_s01e05_dadaab_activation", "PipelineKey": "rqa_s01e05_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E06_Dadaab (Text) - wusc_covid19_adaptation_s01e06_dadaab_activation", "PipelineKey": "rqa_s01e06_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E07_Dadaab (Text) - wusc_covid19_adaptation_s01e07_dadaab_activation", "PipelineKey": "rqa_s01e07_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E08_Dadaab (Text) - wusc_covid19_adaptation_s01e08_dadaab_activation", "PipelineKey": "rqa_s01e08_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E09_Dadaab (Text) - wusc_covid19_adaptation_s01e09_dadaab_activation", "PipelineKey": "rqa_s01e09_raw", "IsActivationMessage": true},
+    {"RapidProKey": "Rqa_Adaptation_S01E10_Dadaab (Text) - wusc_covid19_adaptation_s01e10_dadaab_activation", "PipelineKey": "rqa_s01e10_raw", "IsActivationMessage": true},
+
+    {"RapidProKey": "Rqa_Adaptation_S01E01_Dadaab (Run ID) - wusc_covid19_adaptation_s01e01_dadaab_activation", "PipelineKey": "rqa_s01e01_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E02_Dadaab (Run ID) - wusc_covid19_adaptation_s01e02_dadaab_activation", "PipelineKey": "rqa_s01e02_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E03_Dadaab (Run ID) - wusc_covid19_adaptation_s01e03_dadaab_activation", "PipelineKey": "rqa_s01e03_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E04_Dadaab (Run ID) - wusc_covid19_adaptation_s01e04_dadaab_activation", "PipelineKey": "rqa_s01e04_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E05_Dadaab (Run ID) - wusc_covid19_adaptation_s01e05_dadaab_activation", "PipelineKey": "rqa_s01e05_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E06_Dadaab (Run ID) - wusc_covid19_adaptation_s01e06_dadaab_activation", "PipelineKey": "rqa_s01e06_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E07_Dadaab (Run ID) - wusc_covid19_adaptation_s01e07_dadaab_activation", "PipelineKey": "rqa_s01e07_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E08_Dadaab (Run ID) - wusc_covid19_adaptation_s01e08_dadaab_activation", "PipelineKey": "rqa_s01e08_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E09_Dadaab (Run ID) - wusc_covid19_adaptation_s01e09_dadaab_activation", "PipelineKey": "rqa_s01e09_run_id"},
+    {"RapidProKey": "Rqa_Adaptation_S01E10_Dadaab (Run ID) - wusc_covid19_adaptation_s01e10_dadaab_activation", "PipelineKey": "rqa_s01e10_run_id"},
+
+    {"RapidProKey": "Rqa_Adaptation_S01E01_Dadaab (Time) - wusc_covid19_adaptation_s01e01_dadaab_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E02_Dadaab (Time) - wusc_covid19_adaptation_s01e02_dadaab_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E03_Dadaab (Time) - wusc_covid19_adaptation_s01e03_dadaab_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E04_Dadaab (Time) - wusc_covid19_adaptation_s01e04_dadaab_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E05_Dadaab (Time) - wusc_covid19_adaptation_s01e05_dadaab_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E06_Dadaab (Time) - wusc_covid19_adaptation_s01e06_dadaab_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E07_Dadaab (Time) - wusc_covid19_adaptation_s01e07_dadaab_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E08_Dadaab (Time) - wusc_covid19_adaptation_s01e08_dadaab_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E09_Dadaab (Time) - wusc_covid19_adaptation_s01e09_dadaab_activation", "PipelineKey": "sent_on"},
+    {"RapidProKey": "Rqa_Adaptation_S01E10_Dadaab (Time) - wusc_covid19_adaptation_s01e10_dadaab_activation", "PipelineKey": "sent_on"},
+
+    {"RapidProKey": "Gender (Text) - wusc_keep_ii_dadaab_demogs", "PipelineKey": "gender_raw"},
+    {"RapidProKey": "Age (Text) - wusc_keep_ii_dadaab_demogs", "PipelineKey": "age_raw"},
+    {"RapidProKey": "Location (Text) - wusc_keep_ii_dadaab_demogs", "PipelineKey": "location_raw"},
+    {"RapidProKey": "Nationality (Text) - wusc_keep_ii_dadaab_demogs", "PipelineKey": "nationality_raw"},
+    {"RapidProKey": "Household_Language (Text) - wusc_keep_ii_dadaab_demogs", "PipelineKey": "household_language_raw"},
+
+    {"RapidProKey": "Gender (Time) - wusc_keep_ii_dadaab_demogs", "PipelineKey": "gender_time"},
+    {"RapidProKey": "Age (Time) - wusc_keep_ii_dadaab_demogs", "PipelineKey": "age_time"},
+    {"RapidProKey": "Location (Time) - wusc_keep_ii_dadaab_demogs", "PipelineKey": "location_time"},
+    {"RapidProKey": "Nationality (Time) - wusc_keep_ii_dadaab_demogs", "PipelineKey": "nationality_time"},
+    {"RapidProKey": "Household_Language (Time) - wusc_keep_ii_dadaab_demogs", "PipelineKey": "household_language_time"},
+    
+    {"RapidProKey": "Gender (Text) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "gender_raw"},
+    {"RapidProKey": "Age (Text) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "age_raw"},
+    {"RapidProKey": "Location (Text) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "location_raw"},
+    {"RapidProKey": "Nationality (Text) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "nationality_raw"},
+    {"RapidProKey": "Household_Language (Text) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "household_language_raw"},
+
+    {"RapidProKey": "Gender (Time) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "gender_time"},
+    {"RapidProKey": "Age (Time) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "age_time"},
+    {"RapidProKey": "Location (Time) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "location_time"},
+    {"RapidProKey": "Nationality (Time) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "nationality_time"},
+    {"RapidProKey": "Household_Language (Time) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "household_language_time"}
+  ],
+  "PipelineName": "dadaab_pipeline",
+  "ProjectStartDate": "2020-05-06T08:20:00+03:00",
+  "ProjectEndDate": "2100-01-01T00:00:00+03:00",
+  "FilterTestMessages": true,
+  "MoveWSMessages": false,
+ "DriveUpload": {
+    "DriveCredentialsFileURL": "gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
+    "ProductionUploadPath": "wusc_covid19_adaptation_analysis_outputs/dadaab/wusc_covid19_adaptation_s01_dadaab_production.csv",
+    "MessagesUploadPath": "wusc_covid19_adaptation_analysis_outputs/dadaab/wusc_covid19_adaptation_s01_dadaab_messages.csv",
+    "IndividualsUploadPath": "wusc_covid19_adaptation_analysis_outputs/dadaab/wusc_covid19_adaptation_s01_dadaab_individuals.csv",
+    "AutomatedAnalysisDir": "wusc_covid19_adaptation_analysis_outputs/dadaab/automated_analysis"
+  },
+  "MemoryProfileUploadURLPrefix": "gs://avf-pipeline-logs-performance-nearline/2020/WUSC-COVID19-ADAPTATION/dadaab-memory-",
+  "DataArchiveUploadURLPrefix": "gs://pipeline-execution-backup-archive/2020/WUSC-COVID19-ADAPTATION/dadaab-data-"
+}
