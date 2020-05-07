@@ -6,7 +6,7 @@ from core_data_modules.util import IOUtils
 
 from src import LoadData, TranslateRapidProKeys, AutoCode, ProductionFile, \
     ApplyManualCodes, AnalysisFile, WSCorrection
-from src.lib import PipelineConfiguration
+from src.lib import PipelineConfiguration, MessageFilters
 from configurations.code_schemes import CodeSchemes
 
 log = Logger(__name__)
@@ -95,6 +95,9 @@ if __name__ == "__main__":
 
     log.info("Auto Coding...")
     data = AutoCode.auto_code(user, data, pipeline_configuration, icr_output_dir, coded_dir_path)
+
+    log.info("Filtering out Messages labelled as Noise_Other_Channel...")
+    data = MessageFilters.filter_noise_other_channel(data)
 
     log.info("Exporting production CSV...")
     data = ProductionFile.generate(data, production_csv_output_path)
