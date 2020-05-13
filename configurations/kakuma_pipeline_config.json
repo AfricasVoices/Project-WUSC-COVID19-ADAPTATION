@@ -6,7 +6,16 @@
       "TokenFileURL": "gs://avf-credentials/wusc-keep-II-kakuma-textit-token.txt",
       "ContactsFileName": "wusc_kakuma_contacts",
       "ActivationFlowNames": [
-        "wusc_covid19_adaptation_s01e01_kakuma_activation"
+        "wusc_covid19_adaptation_s01e01_kakuma_activation",
+        "wusc_covid19_adaptation_s01e02_kakuma_activation",
+        "wusc_covid19_adaptation_s01e03_kakuma_activation",
+        "wusc_covid19_adaptation_s01e04_kakuma_activation",
+        "wusc_covid19_adaptation_s01e05_kakuma_activation",
+        "wusc_covid19_adaptation_s01e06_kakuma_activation",
+        "wusc_covid19_adaptation_s01e07_kakuma_activation",
+        "wusc_covid19_adaptation_s01e08_kakuma_activation",
+        "wusc_covid19_adaptation_s01e09_kakuma_activation",
+        "wusc_covid19_adaptation_s01e10_kakuma_activation"
       ],
       "SurveyFlowNames": [
         "wusc_keep_ii_kakuma_demogs",

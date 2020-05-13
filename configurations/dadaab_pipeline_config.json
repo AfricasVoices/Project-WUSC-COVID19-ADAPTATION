@@ -6,7 +6,17 @@
       "TokenFileURL": "gs://avf-credentials/wusc-keep-II-dadaab-textit-token.txt",
       "ContactsFileName": "wusc_dadaab_contacts",
       "ActivationFlowNames": [
-        "wusc_covid19_adaptation_s01e01_dadaab_activation"
+        "wusc_covid19_adaptation_s01e01_dadaab_activation",
+        "wusc_covid19_adaptation_s01e02_dadaab_activation",
+        "wusc_covid19_adaptation_s01e03_dadaab_activation",
+        "wusc_covid19_adaptation_s01e04_dadaab_activation",
+        "wusc_covid19_adaptation_s01e05_dadaab_activation",
+        "wusc_covid19_adaptation_s01e06_dadaab_activation",
+        "wusc_covid19_adaptation_s01e07_dadaab_activation",
+        "wusc_covid19_adaptation_s01e08_dadaab_activation",
+        "wusc_covid19_adaptation_s01e09_dadaab_activation",
+        "wusc_covid19_adaptation_s01e10_dadaab_activation"
+
       ],
       "SurveyFlowNames": [
         "wusc_keep_ii_dadaab_demogs",
