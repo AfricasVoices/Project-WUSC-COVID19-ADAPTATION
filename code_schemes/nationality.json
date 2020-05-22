@@ -81,6 +81,17 @@
       ]
     },
     {
+      "CodeID": "code-d2f3cb07",
+      "CodeType": "Normal",
+      "DisplayText": "tanzania",
+      "NumericValue": 7,
+      "StringValue": "tanzania",
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "tanzania"
+      ]
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
