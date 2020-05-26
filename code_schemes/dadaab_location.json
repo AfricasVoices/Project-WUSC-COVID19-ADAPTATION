@@ -4,6 +4,38 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-25b4c458",
+      "CodeType": "Normal",
+      "DisplayText": "camp",
+      "NumericValue": 0,
+      "StringValue": "camp",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1a439322",
+      "CodeType": "Normal",
+      "DisplayText": "host",
+      "NumericValue": 1,
+      "StringValue": "host",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f1d89d38",
+      "CodeType": "Normal",
+      "DisplayText": "dadaab",
+      "NumericValue": 2,
+      "StringValue": "dadaab",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-da794204",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 3,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
@@ -88,7 +120,7 @@
       "CodeID": "code-PB-a434a800",
       "CodeType": "Meta",
       "MetaCode": "push_back",
-      "DisplayText": "meta: push back",
+      "DisplayText": "push back",
       "NumericValue": -100000,
       "StringValue": "push_back",
       "VisibleInCoda": true
@@ -97,7 +129,7 @@
       "CodeID": "code-SQ-5e8f0122",
       "CodeType": "Meta",
       "MetaCode": "showtime_question",
-      "DisplayText": "meta: showtime question",
+      "DisplayText": "showtime question",
       "NumericValue": -100030,
       "StringValue": "showtime_question",
       "VisibleInCoda": true
@@ -106,7 +138,7 @@
       "CodeID": "code-Q-a5d3700d",
       "CodeType": "Meta",
       "MetaCode": "question",
-      "DisplayText": "meta: question",
+      "DisplayText": "question",
       "NumericValue": -100010,
       "StringValue": "question",
       "VisibleInCoda": true
@@ -115,7 +147,7 @@
       "CodeID": "code-G-97cb3199",
       "CodeType": "Meta",
       "MetaCode": "greeting",
-      "DisplayText": "meta: greeting",
+      "DisplayText": "greeting",
       "NumericValue": -100020,
       "StringValue": "greeting",
       "VisibleInCoda": true
@@ -124,7 +156,7 @@
       "CodeID": "code-OI-c5f1d054",
       "CodeType": "Meta",
       "MetaCode": "opt-in",
-      "DisplayText": "meta: opt-in",
+      "DisplayText": "opt-in",
       "NumericValue": -100040,
       "StringValue": "opt_in",
       "VisibleInCoda": true
@@ -133,7 +165,7 @@
       "CodeID": "code-SC-a3a065bc",
       "CodeType": "Meta",
       "MetaCode": "similar_content",
-      "DisplayText": "meta: similar content",
+      "DisplayText": "similar content",
       "NumericValue": -100050,
       "StringValue": "similar_content",
       "VisibleInCoda": true
@@ -142,7 +174,7 @@
       "CodeID": "code-PI-83b90d32",
       "CodeType": "Meta",
       "MetaCode": "participation_incentive",
-      "DisplayText": "meta: participation incentive",
+      "DisplayText": "participation incentive",
       "NumericValue": -100060,
       "StringValue": "participation_incentive",
       "VisibleInCoda": true
