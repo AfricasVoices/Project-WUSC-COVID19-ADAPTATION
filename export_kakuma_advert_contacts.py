@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
     # Read the messages dataset
     log.info(f'Loading the messages dataset ...')
-    with open(f'{data_dir}/Outputs/messages_traced_data.jsonl') as f:
+    with open(f'{data_dir}/messages_traced_data.jsonl') as f:
         messages = TracedDataJsonIO.import_jsonl_to_traced_data_iterable(f)
     log.info(f'Loaded {len(messages)} objects from the dataset')
 
