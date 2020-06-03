@@ -13,10 +13,11 @@ log = Logger(__name__)
 
 
 class _WSUpdate(object):
-    def __init__(self, message, timestamp, source):
+    def __init__(self, message, timestamp, source_field, source_td):
         self.message = message
         self.timestamp = timestamp
-        self.source = source
+        self.source_field = source_field
+        self.source_td = source_td
 
 
 class WSCorrection(object):
@@ -80,7 +81,8 @@ class WSCorrection(object):
                         f"{plan.raw_field}_WS_correct_dataset":
                             CleaningUtils.make_label_from_cleaner_code(
                                 PipelineConfiguration.WS_CORRECT_DATASET_SCHEME,
-                                PipelineConfiguration.WS_CORRECT_DATASET_SCHEME.get_code_with_control_code(Codes.CODING_ERROR),
+                                PipelineConfiguration.WS_CORRECT_DATASET_SCHEME.get_code_with_control_code(
+                                    Codes.CODING_ERROR),
                                 Metadata.get_call_location(),
                             ).to_dict()
                     }
@@ -152,10 +154,12 @@ class WSCorrection(object):
                     survey_updates[plan.raw_field] = []
                 elif plan.raw_field in td:
                     # Data is not moving
-                    survey_updates[plan.raw_field] = [_WSUpdate(td[plan.raw_field], td[plan.time_field], plan.raw_field)]
+                    survey_updates[plan.raw_field] = [
+                        _WSUpdate(td[plan.raw_field], td[plan.time_field], plan.raw_field, td)
+                    ]
 
             # Build a list of the rqa fields that haven't been moved.
-            rqa_updates = []  # of (field, value)
+            rqa_updates = []  # of (raw_field, _WSUpdate)
             for i, td in enumerate(group):
                 for plan in PipelineConfiguration.RQA_CODING_PLANS:
                     if plan.coda_filename is None:
@@ -167,7 +171,9 @@ class WSCorrection(object):
                             pass
                         else:
                             # Data is not moving
-                            rqa_updates.append((plan.raw_field, _WSUpdate(td[plan.raw_field], td[plan.time_field], plan.raw_field)))
+                            rqa_updates.append(
+                                (plan.raw_field, _WSUpdate(td[plan.raw_field], td[plan.time_field], plan.raw_field, td))
+                            )
 
             # Add data moving from survey fields to the relevant survey_/rqa_updates
             raw_survey_fields = {plan.raw_field for plan in PipelineConfiguration.SURVEY_CODING_PLANS}
@@ -175,12 +181,12 @@ class WSCorrection(object):
             for plan in PipelineConfiguration.SURVEY_CODING_PLANS + PipelineConfiguration.RQA_CODING_PLANS:
                 if plan.raw_field not in survey_moves:
                     continue
-                    
+
                 target_field = survey_moves[plan.raw_field]
                 if target_field is None:
                     continue
-                    
-                update = _WSUpdate(td[plan.raw_field], td[plan.time_field], plan.raw_field)
+
+                update = _WSUpdate(td[plan.raw_field], td[plan.time_field], plan.raw_field, td)
                 if target_field in raw_survey_fields:
                     survey_updates[target_field] = survey_updates.get(target_field, []) + [update]
                 else:
@@ -195,7 +201,7 @@ class WSCorrection(object):
                 for plan in PipelineConfiguration.SURVEY_CODING_PLANS + PipelineConfiguration.RQA_CODING_PLANS:
                     if plan.raw_field == source_field:
                         _td = group[i]
-                        update = _WSUpdate(_td[plan.raw_field], _td[plan.time_field], plan.raw_field)
+                        update = _WSUpdate(_td[plan.raw_field], _td[plan.time_field], plan.raw_field, td)
                         if target_field in raw_survey_fields:
                             survey_updates[target_field] = survey_updates.get(target_field, []) + [update]
                         else:
@@ -211,39 +217,44 @@ class WSCorrection(object):
                     if len(plan_updates) > 0:
                         flattened_survey_updates[plan.raw_field] = "; ".join([u.message for u in plan_updates])
                         flattened_survey_updates[plan.time_field] = sorted([u.timestamp for u in plan_updates])[0]
-                        flattened_survey_updates[f"{plan.raw_field}_source"] = "; ".join([u.source for u in plan_updates])
+                        flattened_survey_updates[f"{plan.raw_field}_source"] = "; ".join(
+                            [u.source_field for u in plan_updates])
                     else:
                         flattened_survey_updates[plan.raw_field] = None
                         flattened_survey_updates[plan.time_field] = None
                         flattened_survey_updates[f"{plan.raw_field}_source"] = None
 
-            # Hide the survey keys currently in the TracedData which have had data moved away.
-            td.hide_keys({k for k, v in flattened_survey_updates.items() if v is None}.intersection(td.keys()),
-                         Metadata(user, Metadata.get_call_location(), time.time()))
-
-            # Update with the corrected survey data
-            td.append_data({k: v for k, v in flattened_survey_updates.items() if v is not None},
-                           Metadata(user, Metadata.get_call_location(), time.time()))
-
-            # Hide all the RQA fields (they will be added back, in turn, in the next step).
-            td.hide_keys({plan.raw_field for plan in PipelineConfiguration.RQA_CODING_PLANS}.intersection(td.keys()),
-                         Metadata(user, Metadata.get_call_location(), time.time()))
-            td.hide_keys({plan.time_field for plan in PipelineConfiguration.RQA_CODING_PLANS}.intersection(td.keys()),
-                         Metadata(user, Metadata.get_call_location(), time.time()))
-
-            # For each rqa message, create a copy of this td, append the rqa message, and add this to the
-            # list of TracedData.
+            # For each RQA message, create a copy of its source td, append the updated TracedData, and add this to
+            # the list of TracedData to be returned
             raw_field_to_rqa_plan_map = {plan.raw_field: plan for plan in PipelineConfiguration.RQA_CODING_PLANS}
             for target_field, update in rqa_updates:
+                corrected_td = update.source_td.copy()
+
+                # Hide the survey keys currently in the TracedData which have had data moved away.
+                corrected_td.hide_keys(
+                    {k for k, v in flattened_survey_updates.items() if v is None}.intersection(corrected_td.keys()),
+                    Metadata(user, Metadata.get_call_location(), time.time()))
+
+                # Update with the corrected survey data
+                corrected_td.append_data({k: v for k, v in flattened_survey_updates.items() if v is not None},
+                                         Metadata(user, Metadata.get_call_location(), time.time()))
+
+                # Hide all the RQA fields (they will be added back, in turn, in the next step).
+                corrected_td.hide_keys(
+                    {plan.raw_field for plan in PipelineConfiguration.RQA_CODING_PLANS}.intersection(corrected_td.keys()),
+                    Metadata(user, Metadata.get_call_location(), time.time()))
+                corrected_td.hide_keys(
+                    {plan.time_field for plan in PipelineConfiguration.RQA_CODING_PLANS}.intersection(corrected_td.keys()),
+                    Metadata(user, Metadata.get_call_location(), time.time()))
+
                 target_coding_plan = raw_field_to_rqa_plan_map[target_field]
 
                 rqa_dict = {
                     target_field: update.message,
                     target_coding_plan.time_field: update.timestamp,
-                    f"{target_field}_source": update.source
+                    f"{target_field}_source": update.source_field
                 }
 
-                corrected_td = td.copy()
                 corrected_td.append_data(rqa_dict, Metadata(user, Metadata.get_call_location(), time.time()))
                 corrected_data.append(corrected_td)
 
