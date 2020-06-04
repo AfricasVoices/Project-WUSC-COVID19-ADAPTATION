@@ -4,6 +4,62 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-7942bd6a",
+      "CodeType": "Normal",
+      "DisplayText": "providing learning resources",
+      "NumericValue": 0,
+      "StringValue": "providing_learning_resources",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-b1731633",
+      "CodeType": "Normal",
+      "DisplayText": "giving children sufficient study time",
+      "NumericValue": 1,
+      "StringValue": "giving_children_sufficient_study_time",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-fcac7720",
+      "CodeType": "Normal",
+      "DisplayText": "adequate supervision and guidance",
+      "NumericValue": 2,
+      "StringValue": "adequate_supervision_and_guidance",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-452b8d8b",
+      "CodeType": "Normal",
+      "DisplayText": "safety of children",
+      "NumericValue": 3,
+      "StringValue": "safety_of_children",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-480611e1",
+      "CodeType": "Normal",
+      "DisplayText": "early pregnancies",
+      "NumericValue": 4,
+      "StringValue": "early_pregnancies",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-13e2d75e",
+      "CodeType": "Normal",
+      "DisplayText": "refugees safety",
+      "NumericValue": 5,
+      "StringValue": "refugees_safety",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-8e3eda03",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 6,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",

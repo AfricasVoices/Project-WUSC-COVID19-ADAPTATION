@@ -4,6 +4,70 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-188a88f2",
+      "CodeType": "Normal",
+      "DisplayText": "reduces the spread of COVID19",
+      "NumericValue": 0,
+      "StringValue": "reduces_the_spread_of_COVID19",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a4aa3a81",
+      "CodeType": "Normal",
+      "DisplayText": "enhances student concentration on academics",
+      "NumericValue": 1,
+      "StringValue": "enhances_student_concentration_on_academics",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c9b28fb8",
+      "CodeType": "Normal",
+      "DisplayText": "parent/caregivers support for their children education",
+      "NumericValue": 2,
+      "StringValue": "parent_caregivers_support_for_their_children_education",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ccf5591b",
+      "CodeType": "Normal",
+      "DisplayText": "it adds no value to learning",
+      "NumericValue": 3,
+      "StringValue": "it_adds_no_value_to_learning",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f4b57a2f",
+      "CodeType": "Normal",
+      "DisplayText": "limited access to necessary resources",
+      "NumericValue": 4,
+      "StringValue": "limited_access_to_necessary_resources",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-16bd6912",
+      "CodeType": "Normal",
+      "DisplayText": "increased chore burden",
+      "NumericValue": 5,
+      "StringValue": "increased_chore_burden",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-dd598f75",
+      "CodeType": "Normal",
+      "DisplayText": "teenage pregnancies",
+      "NumericValue": 6,
+      "StringValue": "teenage_pregnancies",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-549a43f7",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 7,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",

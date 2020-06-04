@@ -4,6 +4,46 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-38288369",
+      "CodeType": "Normal",
+      "DisplayText": "educating them about Covid19",
+      "NumericValue": 0,
+      "StringValue": "educating_them_about_Covid19",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-14645b10",
+      "CodeType": "Normal",
+      "DisplayText": "MOH guidelines on personal safety",
+      "NumericValue": 1,
+      "StringValue": "MOH_guidelines_on_personal_safety",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-fcac7720",
+      "CodeType": "Normal",
+      "DisplayText": "providing learning resources",
+      "NumericValue": 2,
+      "StringValue": "providing_learning_resources",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-6eb9a2de",
+      "CodeType": "Normal",
+      "DisplayText": "early pregnancies",
+      "NumericValue": 3,
+      "StringValue": "early_pregnancies",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-750d9367",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 4,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
