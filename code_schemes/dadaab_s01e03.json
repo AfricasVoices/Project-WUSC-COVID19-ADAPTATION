@@ -4,6 +4,46 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-139c5ecd",
+      "CodeType": "Normal",
+      "DisplayText": "follow guidelines",
+      "NumericValue": 0,
+      "StringValue": "follow_guidelines",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-885c0605",
+      "CodeType": "Normal",
+      "DisplayText": "alternative sources of entertainment",
+      "NumericValue": 1,
+      "StringValue": "alternative_sources_of_entertainment",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-eddaf902",
+      "CodeType": "Normal",
+      "DisplayText": "educating them about COVID19",
+      "NumericValue": 2,
+      "StringValue": "educating_them_about_COVID19",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-5eb3a055",
+      "CodeType": "Normal",
+      "DisplayText": "take extra precautions",
+      "NumericValue": 3,
+      "StringValue": "take_extra_precautions",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c3da83c7",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 4,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
