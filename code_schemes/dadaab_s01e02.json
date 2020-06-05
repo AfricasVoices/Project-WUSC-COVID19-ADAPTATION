@@ -4,6 +4,46 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-68584cb1",
+      "CodeType": "Normal",
+      "DisplayText": "parent/caregivers support for their children's education",
+      "NumericValue": 0,
+      "StringValue": "parent/caregivers_support_for_their_childrens_education",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2efdc6de",
+      "CodeType": "Normal",
+      "DisplayText": "edu - awareness creation",
+      "NumericValue": 1,
+      "StringValue": "edu_awareness_creation",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-37e1e6d6",
+      "CodeType": "Normal",
+      "DisplayText": "limited access to necessary resources",
+      "NumericValue": 2,
+      "StringValue": "limited_access_to_necessary_resources",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-64aae005",
+      "CodeType": "Normal",
+      "DisplayText": "cooperation between parents and other stakeholders",
+      "NumericValue": 3,
+      "StringValue": "cooperation_between_parents_and_other_stakeholders",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3609bf84",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 4,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",

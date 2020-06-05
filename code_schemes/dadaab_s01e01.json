@@ -4,6 +4,62 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-e0ce1af7",
+      "CodeType": "Normal",
+      "DisplayText": "it is a good idea/approach",
+      "NumericValue": 0,
+      "StringValue": "it_is_a_good_idea_approach",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-bcf1116b",
+      "CodeType": "Normal",
+      "DisplayText": "limited access to necessary resources",
+      "NumericValue": 1,
+      "StringValue": "limited_access_to_necessary_resources",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ea438a05",
+      "CodeType": "Normal",
+      "DisplayText": "continuous learning is important",
+      "NumericValue": 2,
+      "StringValue": "continuous_learning_is_important",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1e273cab",
+      "CodeType": "Normal",
+      "DisplayText": "difficulty in understanding",
+      "NumericValue": 3,
+      "StringValue": "difficulty_in_understanding",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-9be9be38",
+      "CodeType": "Normal",
+      "DisplayText": "low concentration at home",
+      "NumericValue": 4,
+      "StringValue": "low_concentration_at_home",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f3cd7048",
+      "CodeType": "Normal",
+      "DisplayText": "parent/caregivers support for their children's education",
+      "NumericValue": 5,
+      "StringValue": "parent/caregivers_support_for_their_childrens_education",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-dc18c292",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 6,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
