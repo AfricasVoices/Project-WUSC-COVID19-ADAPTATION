@@ -54,5 +54,5 @@ ADD configurations /app/configurations/
 ADD src /app/src
 ADD fetch_raw_data.py /app
 ADD generate_outputs.py /app
-ADD upload_files.py /app
+ADD upload_analysis_files.py /app
 ADD automated_analysis.py /app

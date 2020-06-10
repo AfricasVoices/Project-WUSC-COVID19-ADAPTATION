@@ -629,11 +629,12 @@ class PipelineConfiguration(object):
 
     DADAAB_SURVEY_CODING_PLANS = DADAAB_DEMOG_CODING_PLANS + DADAAB_FOLLOW_UP_SURVEY_CODING_PLANS
 
-    def __init__(self, raw_data_sources, phone_number_uuid_table, timestamp_remappings,
+    def __init__(self, pipeline_name, raw_data_sources, phone_number_uuid_table, timestamp_remappings,
                  rapid_pro_key_remappings, project_start_date, project_end_date, filter_test_messages, move_ws_messages,
-                 memory_profile_upload_url_prefix, data_archive_upload_url_prefix, pipeline_name=None,
-                 drive_upload=None, listening_group_csv_urls=None):
+                 memory_profile_upload_bucket, data_archive_upload_bucket, bucket_dir_path, drive_upload=None):
         """
+        :param pipeline_name: The name of this pipeline.
+        :type pipeline_name: str
         :param raw_data_sources: List of sources to pull the various raw run files from.
         :type raw_data_sources: list of RawDataSource
         :param phone_number_uuid_table: Configuration for the Firestore phone number <-> uuid table.
@@ -650,18 +651,21 @@ class PipelineConfiguration(object):
         :type filter_test_messages: bool
         :param move_ws_messages: Whether to move messages labelled as Wrong Scheme to the correct dataset.
         :type move_ws_messages: bool
-        :param memory_profile_upload_url_prefix: The prefix of the GS URL to upload the memory profile log to.
-                                                 This prefix will be appended by the id of the pipeline run (provided
-                                                 as a command line argument), and the ".profile" file extension.
-        :type memory_profile_upload_url_prefix: str
-        :param pipeline_name: The name of the pipeline to run.
-        :type pipeline_name: str | None
+        :param memory_profile_upload_bucket: The GS bucket name to upload the memory profile log to.
+                                              This name will be appended with the log_dir_path
+                                              and the file basename to generate the log upload location.
+        :type memory_profile_upload_bucket: str
+        :param data_archive_upload_bucket: The GS bucket name to upload the data archive file to.
+                                            This name will be appended with the log_dir_path
+                                            and the file basename to generate the archive upload location.
+        :type data_archive_upload_bucket: str
+        :param bucket_dir_path: The GS bucket folder path to store the data archive & memory log files to.
+        :type bucket_dir_path: str
         :param drive_upload: Configuration for uploading to Google Drive, or None.
                              If None, does not upload to Google Drive.
         :type drive_upload: DriveUploadPaths | None
-        :param listening_group_csv_urls: Google cloud storage urls to fetch listening group csvs from.
-        :type listening_group_csv_urls: list of str | None
         """
+        self.pipeline_name = pipeline_name
         self.raw_data_sources = raw_data_sources
         self.phone_number_uuid_table = phone_number_uuid_table
         self.timestamp_remappings = timestamp_remappings
@@ -670,15 +674,16 @@ class PipelineConfiguration(object):
         self.project_end_date = project_end_date
         self.filter_test_messages = filter_test_messages
         self.move_ws_messages = move_ws_messages
-        self.memory_profile_upload_url_prefix = memory_profile_upload_url_prefix
-        self.data_archive_upload_url_prefix = data_archive_upload_url_prefix
-        self.pipeline_name = pipeline_name
         self.drive_upload = drive_upload
-        self.listening_group_csv_urls = listening_group_csv_urls
+        self.memory_profile_upload_bucket = memory_profile_upload_bucket
+        self.data_archive_upload_bucket = data_archive_upload_bucket
+        self.bucket_dir_path = bucket_dir_path
         self.validate()
 
     @classmethod
     def from_configuration_dict(cls, configuration_dict):
+        pipeline_name = configuration_dict["PipelineName"]
+
         raw_data_sources = []
         for raw_data_source in configuration_dict["RawDataSources"]:
             if raw_data_source["SourceType"] == "RapidPro":
@@ -704,27 +709,26 @@ class PipelineConfiguration(object):
         filter_test_messages = configuration_dict["FilterTestMessages"]
         move_ws_messages = configuration_dict["MoveWSMessages"]
 
-        memory_profile_upload_url_prefix = configuration_dict["MemoryProfileUploadURLPrefix"]
-        data_archive_upload_url_prefix = configuration_dict["DataArchiveUploadURLPrefix"]
-
-        pipeline_name = configuration_dict.get("PipelineName")
-
         drive_upload_paths = None
         if "DriveUpload" in configuration_dict:
             drive_upload_paths = DriveUpload.from_configuration_dict(configuration_dict["DriveUpload"])
 
-        listening_group_csv_urls = configuration_dict.get("ListeningGroupCSVURLs")
+        memory_profile_upload_bucket = configuration_dict["MemoryProfileUploadBucket"]
+        data_archive_upload_bucket = configuration_dict["DataArchiveUploadBucket"]
+        bucket_dir_path = configuration_dict["BucketDirPath"]
 
-        return cls(raw_data_sources, phone_number_uuid_table, timestamp_remappings,
+        return cls(pipeline_name, raw_data_sources, phone_number_uuid_table, timestamp_remappings,
                    rapid_pro_key_remappings, project_start_date, project_end_date, filter_test_messages,
-                   move_ws_messages, memory_profile_upload_url_prefix, data_archive_upload_url_prefix, pipeline_name,
-                   drive_upload_paths, listening_group_csv_urls)
+                   move_ws_messages, memory_profile_upload_bucket, data_archive_upload_bucket, bucket_dir_path,
+                   drive_upload_paths)
 
     @classmethod
     def from_configuration_file(cls, f):
         return cls.from_configuration_dict(json.load(f))
 
     def validate(self):
+        validators.validate_string(self.pipeline_name, "pipeline_name")
+
         validators.validate_list(self.raw_data_sources, "raw_data_sources")
         for i, raw_data_source in enumerate(self.raw_data_sources):
             assert isinstance(raw_data_source, RawDataSource), f"raw_data_sources[{i}] is not of type of RawDataSource"
@@ -745,20 +749,14 @@ class PipelineConfiguration(object):
         validators.validate_bool(self.filter_test_messages, "filter_test_messages")
         validators.validate_bool(self.move_ws_messages, "move_ws_messages")
 
-        if self.pipeline_name is not None:
-            validators.validate_string(self.pipeline_name, "pipeline_name")
-
         if self.drive_upload is not None:
             assert isinstance(self.drive_upload, DriveUpload), \
                 "drive_upload is not of type DriveUpload"
             self.drive_upload.validate()
 
-        validators.validate_string(self.memory_profile_upload_url_prefix, "memory_profile_upload_url_prefix")
-
-        if self.listening_group_csv_urls is not None:
-            validators.validate_list(self.listening_group_csv_urls, "listening_group_csv_urls")
-            for i, listening_group_csv_url in enumerate(self.listening_group_csv_urls):
-                validators.validate_string(listening_group_csv_url, f"{listening_group_csv_url}")
+        validators.validate_url(self.memory_profile_upload_bucket, "memory_profile_upload_bucket", "gs")
+        validators.validate_url(self.data_archive_upload_bucket, "data_archive_upload_bucket", "gs")
+        validators.validate_string(self.bucket_dir_path, "bucket_dir_path")
 
 
 class RawDataSource(ABC):
@@ -1023,10 +1021,10 @@ class DriveUpload(object):
         production_upload_path = configuration_dict["ProductionUploadPath"]
         messages_upload_path = configuration_dict["MessagesUploadPath"]
         individuals_upload_path = configuration_dict["IndividualsUploadPath"]
-        analysis_graphs_dir = configuration_dict["AutomatedAnalysisDir"]
+        automated_analysis_dir = configuration_dict["AutomatedAnalysisDir"]
 
         return cls(drive_credentials_file_url, production_upload_path, messages_upload_path,
-                   individuals_upload_path, analysis_graphs_dir)
+                   individuals_upload_path, automated_analysis_dir)
 
     def validate(self):
         validators.validate_string(self.drive_credentials_file_url, "drive_credentials_file_url")

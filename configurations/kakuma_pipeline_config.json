@@ -103,6 +103,7 @@
     "IndividualsUploadPath": "wusc_covid19_adaptation_analysis_outputs/kakuma/wusc_covid19_adaptation_s01_kakuma_individuals.csv",
     "AutomatedAnalysisDir": "wusc_covid19_adaptation_analysis_outputs/kakuma/automated_analysis"
   },
-  "MemoryProfileUploadURLPrefix": "gs://avf-pipeline-logs-performance-nearline/2020/WUSC-COVID19-ADAPTATION/kakuma-memory-",
-  "DataArchiveUploadURLPrefix": "gs://pipeline-execution-backup-archive/2020/WUSC-COVID19-ADAPTATION/kakuma-data-"
+  "MemoryProfileUploadBucket":"gs://avf-pipeline-logs-performance-nearline",
+  "DataArchiveUploadBucket": "gs://pipeline-execution-backup-archive",
+  "BucketDirPath": "2020/WUSC-COVID19-ADAPTATION/"
 }
