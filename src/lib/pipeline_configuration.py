@@ -754,8 +754,10 @@ class PipelineConfiguration(object):
                 "drive_upload is not of type DriveUpload"
             self.drive_upload.validate()
 
-        memory_profile_upload_url_prefix = f"{self.memory_profile_upload_bucket}{self.bucket_dir_path}"
-        validators.validate_string(memory_profile_upload_url_prefix, "memory_profile_upload_url_prefix")
+        validators.validate_url(self.memory_profile_upload_bucket, "memory_profile_upload_bucket", "gs")
+        validators.validate_url(self.data_archive_upload_bucket, "data_archive_upload_bucket", "gs")
+        validators.validate_string(self.bucket_dir_path, "bucket_dir_path")
+
 
 class RawDataSource(ABC):
     @abstractmethod
