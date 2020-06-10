@@ -79,8 +79,9 @@ def delete_old_log_files(dir_path, uploaded_file_dates):
     # Check for latest modified file path for each day that failed to upload
     # Delete other files for that date
     for file_date in files_for_days_that_upload_failed:
+        most_recent_file_path = max(files_for_days_that_upload_failed[file_date], key=os.path.getmtime)
         for file_path in files_for_days_that_upload_failed[file_date]:
-            if file_path == max(files_for_days_that_upload_failed[file_date], key=os.path.getmtime):
+            if file_path == most_recent_file_path:
                 log.debug(f"Retaining {file_path}")
                 continue
 
