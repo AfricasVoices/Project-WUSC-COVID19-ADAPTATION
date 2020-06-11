@@ -63,7 +63,7 @@
       "CodeID": "code-3ee3e701",
       "CodeType": "Normal",
       "DisplayText": "diminished education standards",
-      "NumericValue": 6,
+      "NumericValue": 7,
       "StringValue": "diminished_education_standards",
       "VisibleInCoda": true
     },
@@ -71,7 +71,7 @@
       "CodeID": "code-3b8a5fe9",
       "CodeType": "Normal",
       "DisplayText": "others",
-      "NumericValue": 7,
+      "NumericValue": 8,
       "StringValue": "others",
       "VisibleInCoda": true
     },
