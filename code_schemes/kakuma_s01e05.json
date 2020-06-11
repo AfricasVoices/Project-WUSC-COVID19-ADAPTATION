@@ -4,6 +4,70 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-eebcab22",
+      "CodeType": "Normal",
+      "DisplayText": "lack of socialising",
+      "NumericValue": 0,
+      "StringValue": "lack_of_socialising",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-77793be4",
+      "CodeType": "Normal",
+      "DisplayText": "loss of livelihoods",
+      "NumericValue": 1,
+      "StringValue": "loss_of_livelihoods",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-26321e89",
+      "CodeType": "Normal",
+      "DisplayText": "lack of food",
+      "NumericValue": 2,
+      "StringValue": "lack_of_food",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-268e3d1a",
+      "CodeType": "Normal",
+      "DisplayText": "emergence of immorality",
+      "NumericValue": 3,
+      "StringValue": "emergence_of_immorality",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4e4aa6db",
+      "CodeType": "Normal",
+      "DisplayText": "early marriages",
+      "NumericValue": 4,
+      "StringValue": "early_marriages",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ba9f6e04",
+      "CodeType": "Normal",
+      "DisplayText": "child abuse",
+      "NumericValue": 5,
+      "StringValue": "child_abuse",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3ee3e701",
+      "CodeType": "Normal",
+      "DisplayText": "diminished education standards",
+      "NumericValue": 6,
+      "StringValue": "diminished_education_standards",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3b8a5fe9",
+      "CodeType": "Normal",
+      "DisplayText": "others",
+      "NumericValue": 7,
+      "StringValue": "others",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
