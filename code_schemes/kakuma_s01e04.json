@@ -4,6 +4,54 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-5417390e",
+      "CodeType": "Normal",
+      "DisplayText": "food",
+      "NumericValue": 0,
+      "StringValue": "food",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4736886f",
+      "CodeType": "Normal",
+      "DisplayText": "providing learning resources",
+      "NumericValue": 1,
+      "StringValue": "providing_learning_resources",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-389b0090",
+      "CodeType": "Normal",
+      "DisplayText": "love and friendly environment",
+      "NumericValue": 2,
+      "StringValue": "love_and_friendly_environment",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ca75a132",
+      "CodeType": "Normal",
+      "DisplayText": "early pregnancies",
+      "NumericValue": 3,
+      "StringValue": "early_pregnancies",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-182349ee",
+      "CodeType": "Normal",
+      "DisplayText": "masks, hygiene, distancing",
+      "NumericValue": 4,
+      "StringValue": "masks_hygiene_distancing",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-643efd27",
+      "CodeType": "Normal",
+      "DisplayText": "others",
+      "NumericValue": 5,
+      "StringValue": "others",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
