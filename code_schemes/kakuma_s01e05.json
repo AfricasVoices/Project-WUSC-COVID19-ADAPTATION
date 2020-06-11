@@ -44,10 +44,18 @@
       "VisibleInCoda": true
     },
     {
+      "CodeID": "code-df8ca19c",
+      "CodeType": "Normal",
+      "DisplayText": "early pregnancies",
+      "NumericValue": 5,
+      "StringValue": "early_pregnancies",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-ba9f6e04",
       "CodeType": "Normal",
       "DisplayText": "child abuse",
-      "NumericValue": 5,
+      "NumericValue": 6,
       "StringValue": "child_abuse",
       "VisibleInCoda": true
     },
