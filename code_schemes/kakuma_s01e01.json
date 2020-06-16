@@ -52,14 +52,6 @@
       "VisibleInCoda": true
     },
     {
-      "CodeID": "code-dd598f75",
-      "CodeType": "Normal",
-      "DisplayText": "teenage pregnancies",
-      "NumericValue": 6,
-      "StringValue": "teenage_pregnancies",
-      "VisibleInCoda": true
-    },
-    {
       "CodeID": "code-549a43f7",
       "CodeType": "Normal",
       "DisplayText": "other",
