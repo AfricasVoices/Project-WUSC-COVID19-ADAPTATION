@@ -4,6 +4,62 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-f571a4d7",
+      "CodeType": "Normal",
+      "DisplayText": "impact on education",
+      "NumericValue": 0,
+      "StringValue": "impact on education",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-32cbac2d",
+      "CodeType": "Normal",
+      "DisplayText": "general impacts on children",
+      "NumericValue": 1,
+      "StringValue": "general_impacts_on_children",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-13bfbb91",
+      "CodeType": "Normal",
+      "DisplayText": "lack of food",
+      "NumericValue": 2,
+      "StringValue": "lack_of_food",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-875db6d8",
+      "CodeType": "Normal",
+      "DisplayText": " impact on children's sports",
+      "NumericValue": 3,
+      "StringValue": " impact_on_childrens_sports",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-453c2df1",
+      "CodeType": "Normal",
+      "DisplayText": "impact on health",
+      "NumericValue": 4,
+      "StringValue": "impact_on_health",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-b6d93d47",
+      "CodeType": "Normal",
+      "DisplayText": "emergence of immorality",
+      "NumericValue": 5,
+      "StringValue": "emergence_of_immorality",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a014347a",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 6,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
