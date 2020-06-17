@@ -8,6 +8,7 @@ from core_data_modules.traced_data.io import TracedDataCodaV2IO
 
 from src.lib import PipelineConfiguration
 from src.lib.configuration_objects import CodingModes
+from configurations.code_schemes import CodeSchemes
 
 log = Logger(__name__)
 
@@ -32,7 +33,7 @@ class WSCorrection(object):
             with open(f"{coda_input_dir}/{plan.coda_filename}") as f:
                 TracedDataCodaV2IO.import_coda_2_to_traced_data_iterable(
                     user, data, f"{plan.id_field}_WS",
-                    {f"{plan.raw_field}_WS_correct_dataset": PipelineConfiguration.WS_CORRECT_DATASET_SCHEME}, f
+                    {f"{plan.raw_field}_WS_correct_dataset": CodeSchemes.WS_CORRECT_DATASET_SCHEME}, f
                 )
 
             for cc in plan.coding_configurations:
@@ -71,7 +72,7 @@ class WSCorrection(object):
 
                 has_ws_code_in_ws_scheme = False
                 if f"{plan.raw_field}_WS_correct_dataset" in td:
-                    ws_code = PipelineConfiguration.WS_CORRECT_DATASET_SCHEME.get_code_with_code_id(
+                    ws_code = CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_code_id(
                         td[f"{plan.raw_field}_WS_correct_dataset"]["CodeID"])
                     has_ws_code_in_ws_scheme = ws_code.code_type == "Normal" or ws_code.control_code == Codes.NOT_CODED
 
@@ -80,8 +81,8 @@ class WSCorrection(object):
                     coding_error_dict = {
                         f"{plan.raw_field}_WS_correct_dataset":
                             CleaningUtils.make_label_from_cleaner_code(
-                                PipelineConfiguration.WS_CORRECT_DATASET_SCHEME,
-                                PipelineConfiguration.WS_CORRECT_DATASET_SCHEME.get_code_with_control_code(
+                                CodeSchemes.WS_CORRECT_DATASET_SCHEME,
+                                CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_control_code(
                                     Codes.CODING_ERROR),
                                 Metadata.get_call_location(),
                             ).to_dict()
@@ -115,7 +116,7 @@ class WSCorrection(object):
             for plan in PipelineConfiguration.SURVEY_CODING_PLANS:
                 if plan.raw_field not in td or plan.coda_filename is None:
                     continue
-                ws_code = PipelineConfiguration.WS_CORRECT_DATASET_SCHEME.get_code_with_code_id(
+                ws_code = CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_code_id(
                     td[f"{plan.raw_field}_WS_correct_dataset"]["CodeID"])
                 if ws_code.code_type == "Normal" or ws_code.control_code == Codes.NOT_CODED:
                     if ws_code.code_id in ws_code_to_raw_field_map:
@@ -132,7 +133,7 @@ class WSCorrection(object):
                 for plan in PipelineConfiguration.RQA_CODING_PLANS:
                     if plan.raw_field not in td or plan.coda_filename is None:
                         continue
-                    ws_code = PipelineConfiguration.WS_CORRECT_DATASET_SCHEME.get_code_with_code_id(
+                    ws_code = CodeSchemes.WS_CORRECT_DATASET_SCHEME.get_code_with_code_id(
                         td[f"{plan.raw_field}_WS_correct_dataset"]["CodeID"])
                     if ws_code.code_type == "Normal" or ws_code.control_code == Codes.NOT_CODED:
                         if ws_code.code_id in ws_code_to_raw_field_map:
