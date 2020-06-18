@@ -6,7 +6,7 @@ PROJECT_NAME="$(<configurations/docker_image_project_name.txt)"
 IMAGE_NAME=$PROJECT_NAME-upload-files
 
 # Check that the correct number of arguments were provided.
-if [[ $# -ne 7 ]]; then
+if [[ $# -ne 8 ]]; then
     echo "Usage: ./docker-run-upload-analysis-files.sh
     <user> <google-cloud-credentials-file-path> <pipeline-configuration-file-path> <run-id> <production-csv-path>
     <messages-csv-path> <individuals-csv-path>"
@@ -21,6 +21,7 @@ RUN_ID=$4
 INPUT_PRODUCTION_CSV=$5
 INPUT_MESSAGES_CSV=$6
 INPUT_INDIVIDUALS_CSV=$7
+AUTOMATED_ANALYSIS_DIR=$8
 
 # Build an image for this pipeline stage.
 docker build -t "$IMAGE_NAME" .
@@ -28,7 +29,7 @@ docker build -t "$IMAGE_NAME" .
 # Create a container from the image that was just built.
 CMD="pipenv run python -u upload_analysis_files.py \
     \"$USER\" /credentials/google-cloud-credentials.json /data/pipeline_configuration.json \"$RUN_ID\" \
-    /data/production.csv /data/messages.csv /data/individuals.csv
+    /data/production.csv /data/messages.csv /data/individuals.csv /data/automated-analysis
 "
 container="$(docker container create -w /app "$IMAGE_NAME" /bin/bash -c "$CMD")"
 echo "Created container $container"
@@ -49,6 +50,9 @@ docker cp "$INPUT_MESSAGES_CSV" "$container:/data/messages.csv"
 
 echo "Copying $INPUT_INDIVIDUALS_CSV -> $container_short_id:/data/individuals.csv"
 docker cp "$INPUT_INDIVIDUALS_CSV" "$container:/data/individuals.csv"
+
+echo "Copying $AUTOMATED_ANALYSIS_DIR -> $container_short_id:/data/automated-analysis"
+docker cp "$AUTOMATED_ANALYSIS_DIR" "$container:/data/automated-analysis"
 
 # Run the container
 echo "Starting container $container_short_id"

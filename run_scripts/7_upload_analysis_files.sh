@@ -16,4 +16,5 @@ DATA_ROOT=$5
 
 cd ..
 ./docker-run-upload-analysis-files.sh "$USER" "$GOOGLE_CLOUD_CREDENTIALS_FILE_PATH" "$PIPELINE_CONFIGURATION_FILE_PATH" "$RUN_ID" \
-    "$DATA_ROOT/Outputs/production.csv" "$DATA_ROOT/Outputs/messages.csv" "$DATA_ROOT/Outputs/individuals.csv"
+    "$DATA_ROOT/Outputs/production.csv" "$DATA_ROOT/Outputs/messages.csv" "$DATA_ROOT/Outputs/individuals.csv" \
+    "$DATA_ROOT/Outputs/Automated Analysis/"

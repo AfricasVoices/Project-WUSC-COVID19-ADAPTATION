@@ -1,6 +1,8 @@
 import argparse
 import json
 import os
+from glob import glob
+
 
 from core_data_modules.logging import Logger
 from storage.google_cloud import google_cloud_utils
@@ -30,6 +32,9 @@ if __name__ == "__main__":
     parser.add_argument("individuals_csv_input_path", metavar="individuals-csv-input-path",
                         help="Path to analysis dataset CSV where respondents are the unit for analysis (i.e. one "
                              "respondent per row, with all their messages joined into a single cell)"),
+    parser.add_argument("automated_analysis_input_dir", metavar="automated-analysis-input-dir",
+                        help="Directory to read the automated analysis outputs from")
+
 
     args = parser.parse_args()
 
@@ -40,6 +45,7 @@ if __name__ == "__main__":
     production_csv_input_path = args.production_csv_input_path
     messages_csv_input_path = args.messages_csv_input_path
     individuals_csv_input_path = args.individuals_csv_input_path
+    automated_analysis_input_dir = args.automated_analysis_input_dir
 
     log.info("Loading Pipeline Configuration File...")
     with open(pipeline_configuration_file_path) as f:
@@ -54,8 +60,7 @@ if __name__ == "__main__":
             google_cloud_credentials_file_path, pipeline_configuration.drive_upload.drive_credentials_file_url))
         drive_client_wrapper.init_client_from_info(credentials_info)
 
-        log.info("Uploading CSVs to Google Drive...")
-
+        log.info("Uploading Analysis CSVs to Google Drive...")
         production_csv_drive_dir = os.path.dirname(pipeline_configuration.drive_upload.production_upload_path)
         production_csv_drive_file_name = os.path.basename(pipeline_configuration.drive_upload.production_upload_path)
         drive_client_wrapper.update_or_create(production_csv_input_path, production_csv_drive_dir,
@@ -73,6 +78,22 @@ if __name__ == "__main__":
         drive_client_wrapper.update_or_create(individuals_csv_input_path, individuals_csv_drive_dir,
                                               target_file_name=individuals_csv_drive_file_name,
                                               target_folder_is_shared_with_me=True, recursive=True)
+
+        log.info("Uploading Automated Analysis CSVs to Drive...")
+        paths_to_upload = glob(f"{automated_analysis_input_dir}/*.csv")
+        for i, path in enumerate(paths_to_upload):
+            log.info(f"Uploading CSV {i + 1}/{len(paths_to_upload)}: {path}...")
+            drive_client_wrapper.update_or_create(
+                path, pipeline_configuration.drive_upload.automated_analysis_dir, target_folder_is_shared_with_me=True,
+                recursive=True)
+
+        log.info("Uploading Automated Analysis graphs to Drive...")
+        paths_to_upload = glob(f"{automated_analysis_input_dir}/graphs/*.png")
+        for i, path in enumerate(paths_to_upload):
+            log.info(f"Uploading graph {i + 1}/{len(paths_to_upload)}: {path}...")
+            drive_client_wrapper.update_or_create(
+                path, f"{pipeline_configuration.drive_upload.automated_analysis_dir}/graphs",
+                target_folder_is_shared_with_me=True, recursive=True)
     else:
         log.info("Skipping uploading to Google Drive (because the pipeline configuration json does not contain the key "
                  "'DriveUploadPaths')")
