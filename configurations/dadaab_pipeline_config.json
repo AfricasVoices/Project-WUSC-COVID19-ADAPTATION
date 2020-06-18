@@ -97,7 +97,7 @@
   "ProjectStartDate": "2020-05-06T08:20:00+03:00",
   "ProjectEndDate": "2100-01-01T00:00:00+03:00",
   "FilterTestMessages": true,
-  "MoveWSMessages": false,
+  "MoveWSMessages": true,
  "DriveUpload": {
     "DriveCredentialsFileURL": "gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
     "ProductionUploadPath": "wusc_covid19_adaptation_analysis_outputs/dadaab/wusc_covid19_adaptation_s01_dadaab_production.csv",
