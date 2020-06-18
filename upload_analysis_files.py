@@ -60,19 +60,19 @@ if __name__ == "__main__":
         production_csv_drive_file_name = os.path.basename(pipeline_configuration.drive_upload.production_upload_path)
         drive_client_wrapper.update_or_create(production_csv_input_path, production_csv_drive_dir,
                                               target_file_name=production_csv_drive_file_name,
-                                              target_folder_is_shared_with_me=True)
+                                              target_folder_is_shared_with_me=True, recursive=True)
 
         messages_csv_drive_dir = os.path.dirname(pipeline_configuration.drive_upload.messages_upload_path)
         messages_csv_drive_file_name = os.path.basename(pipeline_configuration.drive_upload.messages_upload_path)
         drive_client_wrapper.update_or_create(messages_csv_input_path, messages_csv_drive_dir,
                                               target_file_name=messages_csv_drive_file_name,
-                                              target_folder_is_shared_with_me=True)
+                                              target_folder_is_shared_with_me=True, recursive=True)
 
         individuals_csv_drive_dir = os.path.dirname(pipeline_configuration.drive_upload.individuals_upload_path)
         individuals_csv_drive_file_name = os.path.basename(pipeline_configuration.drive_upload.individuals_upload_path)
         drive_client_wrapper.update_or_create(individuals_csv_input_path, individuals_csv_drive_dir,
                                               target_file_name=individuals_csv_drive_file_name,
-                                              target_folder_is_shared_with_me=True)
+                                              target_folder_is_shared_with_me=True, recursive=True)
     else:
         log.info("Skipping uploading to Google Drive (because the pipeline configuration json does not contain the key "
                  "'DriveUploadPaths')")
