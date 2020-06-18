@@ -9,7 +9,7 @@ IMAGE_NAME=$PROJECT_NAME-upload-files
 if [[ $# -ne 8 ]]; then
     echo "Usage: ./docker-run-upload-analysis-files.sh
     <user> <google-cloud-credentials-file-path> <pipeline-configuration-file-path> <run-id> <production-csv-path>
-    <messages-csv-path> <individuals-csv-path>"
+    <messages-csv-path> <individuals-csv-path> <automated-analysis-dir-path>"
     exit
 fi
 
