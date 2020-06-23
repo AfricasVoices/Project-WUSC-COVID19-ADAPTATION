@@ -61,12 +61,6 @@ if __name__ == "__main__":
     Logger.set_project_name(pipeline_configuration.pipeline_name)
     log.debug(f"Pipeline name is {pipeline_configuration.pipeline_name}")
 
-    if pipeline_configuration.drive_upload is not None:
-        log.info(f"Downloading Google Drive service account credentials...")
-        credentials_info = json.loads(google_cloud_utils.download_blob_to_string(
-            google_cloud_credentials_file_path, pipeline_configuration.drive_upload.drive_credentials_file_url))
-        drive_client_wrapper.init_client_from_info(credentials_info)
-
     if pipeline_configuration.pipeline_name == "dadaab_pipeline":
         log.info("Extracting Dadaab pipeline data")
         PipelineConfiguration.RQA_CODING_PLANS = PipelineConfiguration.DADAAB_RQA_CODING_PLANS
@@ -432,7 +426,8 @@ if __name__ == "__main__":
 
         for cc in plan.coding_configurations:
             for code in cc.code_scheme.codes:
-                if code.code_type == CodeTypes.NORMAL and code.string_value not in {"knowledge", "attitude", "behaviour"}:
+                if code.code_type == CodeTypes.NORMAL and code.string_value not in {"knowledge", "attitude",
+                                                                                    "behaviour"}:
                     normal_themes[code.string_value] = episode[f"{cc.analysis_file_key}{code.string_value}"]
 
         if len(normal_themes) == 0:
@@ -452,17 +447,22 @@ if __name__ == "__main__":
                     "Gender": gender_code.string_value,
                     "Number of Participants": demographic_counts[f"gender:{gender_code.string_value}"],
                     "Fraction of Relevant Participants": None if total_relevant_gender == 0 else
-                        demographic_counts[f"gender:{gender_code.string_value}"] / total_relevant_gender
+                    demographic_counts[f"gender:{gender_code.string_value}"] / total_relevant_gender
                 })
 
         fig = px.bar(normal_by_gender, x="RQA Theme", y="Number of Participants", color="Gender", barmode="group",
                      template="plotly_white")
         fig.update_layout(title_text=f"{plan.raw_field} by gender (absolute)")
         fig.update_xaxes(tickangle=-60)
-        fig.write_image(f"{automated_analysis_output_dir}/graphs/{plan.raw_field}_by_gender_absolute.png", scale=IMG_SCALE_FACTOR)
+        fig.write_image(f"{automated_analysis_output_dir}/graphs/{plan.raw_field}_by_gender_absolute.png",
+                        scale=IMG_SCALE_FACTOR)
 
-        fig = px.bar(normal_by_gender, x="RQA Theme", y="Fraction of Relevant Participants", color="Gender", barmode="group",
+        fig = px.bar(normal_by_gender, x="RQA Theme", y="Fraction of Relevant Participants", color="Gender",
+                     barmode="group",
                      template="plotly_white")
         fig.update_layout(title_text=f"{plan.raw_field} by gender (normalised)")
         fig.update_xaxes(tickangle=-60)
-        fig.write_image(f"{automated_analysis_output_dir}/graphs/{plan.raw_field}_by_gender_normalised.png", scale=IMG_SCALE_FACTOR)
+        fig.write_image(f"{automated_analysis_output_dir}/graphs/{plan.raw_field}_by_gender_normalised.png",
+                        scale=IMG_SCALE_FACTOR)
+
+    log.info("automated analysis script complete")
