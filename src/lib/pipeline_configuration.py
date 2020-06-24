@@ -530,7 +530,7 @@ class PipelineConfiguration(object):
 
     KAKUMA_FOLLOW_UP_SURVEY_CODING_PLANS = [
         CodingPlan(raw_field="learning_from_home_experience_raw",
-                   dataset_name="kakuma_learning_from_home_experience_home",
+                   dataset_name="kakuma_learning_from_home_experience",
                    time_field="learning_from_home_experience_time",
                    coda_filename="kakuma_learning_from_home_experience.json",
                    icr_filename="kakuma_learning_from_home_experience.csv",
@@ -645,7 +645,7 @@ class PipelineConfiguration(object):
 
     DADAAB_FOLLOW_UP_SURVEY_CODING_PLANS = [
         CodingPlan(raw_field="learning_from_home_experience_raw",
-                   dataset_name="dadaab_learning_from_home_experience_home",
+                   dataset_name="dadaab_learning_from_home_experience",
                    time_field="learning_from_home_experience_time",
                    coda_filename="dadaab_learning_from_home_experience.json",
                    icr_filename="dadaab_learning_from_home_experience.csv",
