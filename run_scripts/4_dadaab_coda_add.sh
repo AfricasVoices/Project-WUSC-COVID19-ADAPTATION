@@ -28,6 +28,8 @@ DATASETS=(
     "dadaab_s01e08"
     "dadaab_s01e09"
     "dadaab_s01e10"
+    "dadaab_learning_from_home_experience"
+
 )
 
 for DATASET in ${DATASETS[@]}

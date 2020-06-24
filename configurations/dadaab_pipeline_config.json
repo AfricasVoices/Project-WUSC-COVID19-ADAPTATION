@@ -19,7 +19,8 @@
       ],
       "SurveyFlowNames": [
         "wusc_keep_ii_dadaab_demogs",
-        "wusc_covid19_adaptation_dadaab_demogs"
+        "wusc_covid19_adaptation_dadaab_demogs",
+        "wusc_covid19_adaptation_s01_w7_dadaab_follow_up"
       ],
       "TestContactUUIDs": [
         "f3e07a4a-4c5d-4032-80f3-c31bcf480dc9",
@@ -91,7 +92,11 @@
     {"RapidProKey": "Age (Time) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "age_time"},
     {"RapidProKey": "Location (Time) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "location_time"},
     {"RapidProKey": "Nationality (Time) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "nationality_time"},
-    {"RapidProKey": "Household_Language (Time) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "household_language_time"}
+    {"RapidProKey": "Household_Language (Time) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "household_language_time"},
+
+    {"RapidProKey": "Learning_Experience_From_Home (Time) - wusc_covid19_adaptation_s01_w7_dadaab_follow_up", "PipelineKey": "learning_from_home_experience_time"},
+    {"RapidProKey": "Learning_Experience_From_Home (Text) - wusc_covid19_adaptation_s01_w7_dadaab_follow_up", "PipelineKey": "learning_from_home_experience_raw"}
+
   ],
   "PipelineName": "dadaab_pipeline",
   "ProjectStartDate": "2020-05-06T08:20:00+03:00",

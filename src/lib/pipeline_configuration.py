@@ -528,7 +528,25 @@ class PipelineConfiguration(object):
                    raw_field_fold_strategy=FoldStrategies.assert_equal),
     ]
 
-    KAKUMA_FOLLOW_UP_SURVEY_CODING_PLANS = []
+    KAKUMA_FOLLOW_UP_SURVEY_CODING_PLANS = [
+        CodingPlan(raw_field="learning_from_home_experience_raw",
+                   dataset_name="kakuma_learning_from_home_experience_home",
+                   time_field="learning_from_home_experience_time",
+                   coda_filename="kakuma_learning_from_home_experience.json",
+                   icr_filename="kakuma_learning_from_home_experience.csv",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.MULTIPLE,
+                           code_scheme=CodeSchemes.KAKUMA_LEARNING_FROM_HOME_EXPERIENCE,
+                           coded_field="kakuma_learning_from_home_experience_coded",
+                           analysis_file_key="kakuma_learning_from_home_experience_",
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(CodeSchemes.KAKUMA_LEARNING_FROM_HOME_EXPERIENCE, x, y)
+                       )
+                   ],
+                   ws_code=CodeSchemes.KAKUMA_WS_CORRECT_DATASET_SCHEME.get_code_with_match_value(
+                       "covid19 adaptation kakuma learning from home experience"),
+                   raw_field_fold_strategy=FoldStrategies.concatenate)
+    ]
 
     KAKUMA_SURVEY_CODING_PLANS = KAKUMA_DEMOG_CODING_PLANS + KAKUMA_FOLLOW_UP_SURVEY_CODING_PLANS
 
@@ -625,7 +643,26 @@ class PipelineConfiguration(object):
                    raw_field_fold_strategy=FoldStrategies.assert_equal),
     ]
 
-    DADAAB_FOLLOW_UP_SURVEY_CODING_PLANS = [ ]
+    DADAAB_FOLLOW_UP_SURVEY_CODING_PLANS = [
+        CodingPlan(raw_field="learning_from_home_experience_raw",
+                   dataset_name="dadaab_learning_from_home_experience_home",
+                   time_field="learning_from_home_experience_time",
+                   coda_filename="dadaab_learning_from_home_experience.json",
+                   icr_filename="dadaab_learning_from_home_experience.csv",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.MULTIPLE,
+                           code_scheme=CodeSchemes.DADAAB_LEARNING_FROM_HOME_EXPERIENCE,
+                           coded_field="dadaab_learning_from_home_experience_coded",
+                           analysis_file_key="dadaab_learning_from_home_experience_",
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(
+                               CodeSchemes.DADAAB_LEARNING_FROM_HOME_EXPERIENCE, x, y)
+                       )
+                   ],
+                   ws_code=CodeSchemes.DADAAB_WS_CORRECT_DATASET_SCHEME.get_code_with_match_value(
+                       "covid19 adaptation dadaab learning from home experience"),
+                   raw_field_fold_strategy=FoldStrategies.concatenate)
+    ]
 
     DADAAB_SURVEY_CODING_PLANS = DADAAB_DEMOG_CODING_PLANS + DADAAB_FOLLOW_UP_SURVEY_CODING_PLANS
 

@@ -30,6 +30,7 @@ DATASETS=(
     "kakuma_s01e08"
     "kakuma_s01e09"
     "kakuma_s01e10"
+    "kakuma_learning_from_home_experience"
 )
 
 for DATASET in ${DATASETS[@]}

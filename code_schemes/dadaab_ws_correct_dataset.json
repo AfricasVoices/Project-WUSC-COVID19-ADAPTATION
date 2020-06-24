@@ -313,6 +313,17 @@
          ]
     },
     {
+      "CodeID": "code-64400270",
+      "CodeType": "Normal",
+      "DisplayText": "covid19 adaptation dadaab learning from home experience",
+      "StringValue": "covid19_adaptation_dadaab_learning_from_home_experience",
+      "NumericValue": 28,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "covid19 adaptation dadaab learning from home experience"
+         ]
+    },
+    {
       "CodeID": "code-NC-42f1d983",
       "CodeType": "Control",
       "ControlCode": "NC",

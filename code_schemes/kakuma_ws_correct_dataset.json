@@ -312,6 +312,17 @@
          ]
     },
     {
+      "CodeID": "code-c0c42726",
+      "CodeType": "Normal",
+      "DisplayText": "covid19 adaptation kakuma learning from home experience",
+      "StringValue": "covid19_adaptation_kakuma_learning_from_home_experience",
+      "NumericValue": 29,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "covid19 adaptation kakuma learning from home experience"
+         ]
+    },
+    {
       "CodeID": "code-NC-42f1d983",
       "CodeType": "Control",
       "ControlCode": "NC",
