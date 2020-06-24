@@ -41,8 +41,8 @@ class CodeSchemes(object):
     KAKUMA_HOUSEHOLD_LANGUAGE = _open_scheme("kakuma_household_language.json")
     KAKUMA_LOCATION = _open_scheme("kakuma_location.json")
 
-    KAKUMA_LEARNING_FROM_HOME_EXPERIENCE = _open_scheme('kakuma_learning_from_home_experience.json')
-    DADAAB_LEARNING_FROM_HOME_EXPERIENCE = _open_scheme('dadaab_learning_from_home_experience.json')
+    KAKUMA_LEARNING_FROM_HOME_EXPERIENCE = _open_scheme("kakuma_learning_from_home_experience.json")
+    DADAAB_LEARNING_FROM_HOME_EXPERIENCE = _open_scheme("dadaab_learning_from_home_experience.json")
 
     WS_CORRECT_DATASET_SCHEME = None
     KAKUMA_WS_CORRECT_DATASET_SCHEME = _open_scheme("kakuma_ws_correct_dataset.json")
