@@ -484,7 +484,7 @@ if __name__ == "__main__":
 
                 for msg in code_to_messages[code_string_value]:
                     safe_to_share_messages.append({
-                        plan.dataset_name: msg,
+                        "Episode": plan.dataset_name,
                         "Code": code_string_value,
                         "Raw Message": msg
                     })
