@@ -1,9 +1,6 @@
 import argparse
 import csv
-import json
-import random
 from collections import OrderedDict
-from glob import glob
 
 import plotly.express as px
 from core_data_modules.cleaners import Codes
@@ -11,8 +8,6 @@ from core_data_modules.data_models.code_scheme import CodeTypes
 from core_data_modules.logging import Logger
 from core_data_modules.traced_data.io import TracedDataJsonIO
 from core_data_modules.util import IOUtils
-from storage.google_cloud import google_cloud_utils
-from storage.google_drive import drive_client_wrapper
 
 from configurations.code_schemes import CodeSchemes
 from src import AnalysisUtils
@@ -464,5 +459,42 @@ if __name__ == "__main__":
         fig.update_xaxes(tickangle=-60)
         fig.write_image(f"{automated_analysis_output_dir}/graphs/{plan.raw_field}_by_gender_normalised.png",
                         scale=IMG_SCALE_FACTOR)
+    
+    # Export safe to share raw messages for each episode to share with WUSC
+    log.info("Exporting safe to share raw messages for each episode...")
+    safe_to_share_messages = []  # of dict
+    for plan in PipelineConfiguration.RQA_CODING_PLANS[5:]: #loop through episode 6 -> because previous episodes had been manually processed
+        for cc in plan.coding_configurations:
+            code_to_messages = dict()
+            for code in cc.code_scheme.codes:
+                code_to_messages[code.string_value] = []
+
+            for msg in messages:
+                if not AnalysisUtils.opt_in(msg, CONSENT_WITHDRAWN_KEY, plan):
+                    continue
+
+                for label in msg[cc.coded_field]:
+                    code = cc.code_scheme.get_code_with_code_id(label["CodeID"])
+                    code_to_messages[code.string_value].append(msg[plan.raw_field])
+
+            for code_string_value in code_to_messages:
+                if code_string_value == "DNS": # TODO add DNS control code to core and update here
+                    log.warning(f"Excluding {len(code_to_messages[code_string_value])} unsafe to share messages")
+                    continue
+
+                for msg in code_to_messages[code_string_value]:
+                    safe_to_share_messages.append({
+                        plan.dataset_name: msg,
+                        "Code": code_string_value,
+                        "Raw Message": msg
+                    })
+
+    with open(f"{automated_analysis_output_dir}/wusc_safe_to_share_messages.csv", "w") as f:
+        headers = ["Episode", "Code", "Raw Message"]
+        writer = csv.DictWriter(f, fieldnames=headers, lineterminator="\n")
+        writer.writeheader()
+
+        for msg in safe_to_share_messages:
+            writer.writerow(msg)
 
     log.info("automated analysis script complete")
