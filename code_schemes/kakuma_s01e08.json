@@ -156,6 +156,15 @@
       "NumericValue": -100060,
       "StringValue": "participation_incentive",
       "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-DNS-982f3ca2",
+      "DisplayText": "meta: DNS (do not share)",
+      "CodeType": "Meta",
+      "MetaCode": "dns",
+      "StringValue": "dns",
+      "NumericValue": -100070,
+      "VisibleInCoda": true
     }
   ]
 }

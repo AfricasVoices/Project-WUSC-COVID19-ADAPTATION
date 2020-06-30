@@ -1,5 +1,5 @@
 {
-  "SchemeID": "Scheme-f8a100a6",
+  "SchemeID": "Scheme-f8a100a63",
   "Name": "KAKUMA S01E10",
   "Version": "0.0.0.1",
   "Codes": [
@@ -84,16 +84,7 @@
       "StringValue": "CE",
       "VisibleInCoda": false
     },
-    {
-      "CodeID": "code-DNS-982f3ca2",
-      "CodeType": "Control",
-      "ControlCode": "DNS",
-      "DisplayText": "DNS (do not share)",
-      "NumericValue": -120,
-      "StringValue": "DNS",
-      "Shortcut": "d",
-      "VisibleInCoda": true
-    },
+
     {
       "CodeID": "code-PB-a434a800",
       "CodeType": "Meta",
@@ -155,6 +146,15 @@
       "DisplayText": "meta: participation incentive",
       "NumericValue": -100060,
       "StringValue": "participation_incentive",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-DNS-982f3ca2",
+      "DisplayText": "meta: DNS (do not share)",
+      "CodeType": "Meta",
+      "MetaCode": "dns",
+      "StringValue": "dns",
+      "NumericValue": -100070,
       "VisibleInCoda": true
     }
   ]
