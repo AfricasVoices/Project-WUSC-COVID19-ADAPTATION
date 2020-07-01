@@ -479,7 +479,7 @@ if __name__ == "__main__":
                     code = cc.code_scheme.get_code_with_code_id(label["CodeID"])
                     code_string_values.add(code.string_value)
 
-                if "dns" not in code_string_values:
+                if "DNS" not in code_string_values:
                     for code_string_value in code_string_values:
                         code_to_messages[code_string_value].append(msg[plan.raw_field])
                 else:
