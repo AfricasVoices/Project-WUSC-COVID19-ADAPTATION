@@ -1,5 +1,5 @@
 {
-  "SchemeID": "Scheme-f8a100a6",
+  "SchemeID": "Scheme-f8a100a63",
   "Name": "KAKUMA S01E10",
   "Version": "0.0.0.1",
   "Codes": [
@@ -83,6 +83,15 @@
       "NumericValue": -110,
       "StringValue": "CE",
       "VisibleInCoda": false
+    },
+    {
+      "CodeID": "code-DNS-982f3ca2",
+      "CodeType": "Control",
+      "ControlCode": "DNS",
+      "DisplayText": "DNS (do not share)",
+      "NumericValue": -120,
+      "StringValue": "DNS",
+      "VisibleInCoda": true
     },
     {
       "CodeID": "code-PB-a434a800",
