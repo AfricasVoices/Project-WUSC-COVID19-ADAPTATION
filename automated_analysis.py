@@ -463,15 +463,15 @@ if __name__ == "__main__":
     # Export safe to share raw messages for each episode to share with WUSC
     log.info("Exporting safe to share raw messages for each episode...")
     safe_to_share_messages = []  # of dict of code_string_value to raw messages
+    no_of_dns_messages = 0
     for plan in PipelineConfiguration.RQA_CODING_PLANS[5:]: #loop through episode 6 -> because previous episodes had been manually processed
         for cc in plan.coding_configurations:
             code_to_messages = OrderedDict()
             for code in cc.code_scheme.codes:
                 code_to_messages[code.string_value] = []
 
-            no_of_dns_messages = 0
             for msg in messages:
-                if not AnalysisUtils.opt_in(msg, CONSENT_WITHDRAWN_KEY, plan):
+                if not AnalysisUtils.labelled(msg, CONSENT_WITHDRAWN_KEY, plan):
                     continue
 
                 code_string_values = set()
@@ -485,7 +485,6 @@ if __name__ == "__main__":
                 else:
                     no_of_dns_messages += 1
 
-            log.info(f"Excluding {no_of_dns_messages} unsafe to share messages")
             for code_string_value in code_to_messages:
                 for msg in code_to_messages[code_string_value]:
                     safe_to_share_messages.append({
@@ -493,6 +492,8 @@ if __name__ == "__main__":
                         "Code": code_string_value,
                         "Raw Message": msg
                     })
+
+    log.info(f"Excluded {no_of_dns_messages} unsafe to share messages")
 
     with open(f"{automated_analysis_output_dir}/safe_to_share_messages.csv", "w") as f:
         headers = ["Episode", "Code", "Raw Message"]
