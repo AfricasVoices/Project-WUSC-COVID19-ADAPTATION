@@ -4,6 +4,54 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-45755f58",
+      "CodeType": "Normal",
+      "DisplayText": "allocate chores equally",
+      "NumericValue": 0,
+      "StringValue": "allocate_chores_equally",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-52ab8e8c",
+      "CodeType": "Normal",
+      "DisplayText": "equal rights for both boys and girls",
+      "NumericValue": 1,
+      "StringValue": "equal_rights_for_both_boys_and_girls",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2f9b24fa",
+      "CodeType": "Normal",
+      "DisplayText": "awareness creation on equal rights",
+      "NumericValue": 2,
+      "StringValue": "awareness_creation_on_equal_rights",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-5016d7e4",
+      "CodeType": "Normal",
+      "DisplayText": "against culture",
+      "NumericValue": 3,
+      "StringValue": "against_culture",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-58521cbd",
+      "CodeType": "Normal",
+      "DisplayText": "parental responsibility",
+      "NumericValue": 4,
+      "StringValue": "parental_responsibility",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3d9d0a3a",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 5,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",

@@ -4,6 +4,46 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-bb267932",
+      "CodeType": "Normal",
+      "DisplayText": "allocate chores equally",
+      "NumericValue": 0,
+      "StringValue": "allocate_chores_equally",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-371d2bdb",
+      "CodeType": "Normal",
+      "DisplayText": "awareness creation on sharing responsibilities",
+      "NumericValue": 1,
+      "StringValue": "awareness_creation_on_sharing_responsibilities",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-0aa92aba",
+      "CodeType": "Normal",
+      "DisplayText": "parental responsibility",
+      "NumericValue": 2,
+      "StringValue": "parental_responsibility",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a71ff133",
+      "CodeType": "Normal",
+      "DisplayText": "spiritual guidance",
+      "NumericValue": 3,
+      "StringValue": "spiritual_guidance",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-70b2e466",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 4,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
