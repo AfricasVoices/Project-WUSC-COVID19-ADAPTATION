@@ -4,6 +4,70 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-e6b0c903",
+      "CodeType": "Normal",
+      "DisplayText": "report to authorities",
+      "NumericValue": 0,
+      "StringValue": "report_to_authorities",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-af451eb0",
+      "CodeType": "Normal",
+      "DisplayText": "awareness creation against violence",
+      "NumericValue": 1,
+      "StringValue": "awareness_creation_against_violence",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3699e28d",
+      "CodeType": "Normal",
+      "DisplayText": "guidance and counselling",
+      "NumericValue": 2,
+      "StringValue": "guidance_and_counselling",
+      "VisibleInCoda": true
+    },
+     {
+      "CodeID": "code-a2bd7fab",
+      "CodeType": "Normal",
+      "DisplayText": "open dialogue",
+      "NumericValue": 3,
+      "StringValue": "open_dialogue",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3f64fcc8",
+      "CodeType": "Normal",
+      "DisplayText": "promoting moral values",
+      "NumericValue": 4,
+      "StringValue": "promoting_moral_values",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-fb612e67",
+      "CodeType": "Normal",
+      "DisplayText": "protecting vulnerable groups",
+      "NumericValue": 5,
+      "StringValue": "protecting_vulnerable_groups",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-db5d68c1",
+      "CodeType": "Normal",
+      "DisplayText": "follow guidelines",
+      "NumericValue": 6,
+      "StringValue": "follow_guidelines",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3a444aac",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 7,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",

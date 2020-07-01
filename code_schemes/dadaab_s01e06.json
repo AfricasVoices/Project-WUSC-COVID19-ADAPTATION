@@ -4,6 +4,46 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-c771a975",
+      "CodeType": "Normal",
+      "DisplayText": "cooperation and unity",
+      "NumericValue": 0,
+      "StringValue": "cooperation_and_unity",
+      "VisibleInCoda": true
+    },
+     {
+      "CodeID": "code-3c097f6f",
+      "CodeType": "Normal",
+      "DisplayText": "awareness creation against violence",
+      "NumericValue": 1,
+      "StringValue": "awareness_creation_against_violence",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-d100b250",
+      "CodeType": "Normal",
+      "DisplayText": "protecting vulnerable groups",
+      "NumericValue": 2,
+      "StringValue": "protecting_vulnerable_groups",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c856d561",
+      "CodeType": "Normal",
+      "DisplayText": "avoid drug abuse",
+      "NumericValue": 3,
+      "StringValue": "avoid_drug_abuse",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2c534f54",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 4,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
