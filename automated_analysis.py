@@ -461,10 +461,11 @@ if __name__ == "__main__":
                         scale=IMG_SCALE_FACTOR)
 
     # Export safe to share raw messages for each episode to share with WUSC
+    # Messages are safe to share if they have been reviewed and do not contain a 'DNS' (do not share) label
     log.info("Exporting safe to share raw messages for each episode...")
     safe_to_share_messages = []  # of dict of code_string_value to raw messages
     no_of_dns_messages = 0
-    for plan in PipelineConfiguration.RQA_CODING_PLANS[5:]: #loop through episode 6 -> because previous episodes had been manually processed
+    for plan in PipelineConfiguration.RQA_CODING_PLANS[5:]: # Loop through episode 6 -> because previous episodes had been manually processed
         for cc in plan.coding_configurations:
             code_to_messages = OrderedDict()
             for code in cc.code_scheme.codes:
