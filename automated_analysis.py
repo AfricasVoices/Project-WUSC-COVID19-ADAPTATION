@@ -485,7 +485,7 @@ if __name__ == "__main__":
                 else:
                     no_of_dns_messages += 1
 
-            log.info(f"Excluding {dns_messages} unsafe to share messages")
+            log.info(f"Excluding {no_of_dns_messages} unsafe to share messages")
             for code_string_value in code_to_messages:
                 for msg in code_to_messages[code_string_value]:
                     safe_to_share_messages.append({
