@@ -4,6 +4,62 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-655fa6db",
+      "CodeType": "Normal",
+      "DisplayText": "parental responsibility",
+      "NumericValue": 0,
+      "StringValue": "parental_responsibility",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-93b8bfcd",
+      "CodeType": "Normal",
+      "DisplayText": "edu - awareness creation",
+      "NumericValue": 1,
+      "StringValue": "edu_awareness_creation",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2f66c8d0",
+      "CodeType": "Normal",
+      "DisplayText": "motivation and encouragement",
+      "NumericValue": 2,
+      "StringValue": "motivation_and_encouragement",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2c42eb84",
+      "CodeType": "Normal",
+      "DisplayText": "reduce house chores",
+      "NumericValue": 3,
+      "StringValue": "reduce_house_chores",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-9afe9ca8",
+      "CodeType": "Normal",
+      "DisplayText": "sufficient study time",
+      "NumericValue": 4,
+      "StringValue": "sufficient_study_time",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-95beaa1a",
+      "CodeType": "Normal",
+      "DisplayText": "promoting good morals",
+      "NumericValue": 5,
+      "StringValue": "promoting_good_morals",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-7e469f3e",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 6,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",

@@ -4,6 +4,70 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-0005df68",
+      "CodeType": "Normal",
+      "DisplayText": "providing learning resources",
+      "NumericValue": 0,
+      "StringValue": "providing_learning_resources",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-d7185992",
+      "CodeType": "Normal",
+      "DisplayText": "sufficient study time",
+      "NumericValue": 1,
+      "StringValue": "sufficient_study_time",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-0131b8f4",
+      "CodeType": "Normal",
+      "DisplayText": "motivation and encouragement",
+      "NumericValue": 2,
+      "StringValue": "motivation_and_encouragement",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c4277710",
+      "CodeType": "Normal",
+      "DisplayText": "providing support in their studies",
+      "NumericValue": 3,
+      "StringValue": "providing_support_in_their_studies",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a5cbc0a7",
+      "CodeType": "Normal",
+      "DisplayText": "loving and empathizing with them",
+      "NumericValue": 4,
+      "StringValue": "loving_and_empathizing_with_them",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-eba50a36",
+      "CodeType": "Normal",
+      "DisplayText": "offering advice",
+      "NumericValue": 5,
+      "StringValue": "offering_advice",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4bed01c9",
+      "CodeType": "Normal",
+      "DisplayText": "keeping them safe",
+      "NumericValue": 6,
+      "StringValue": "keeping_them_safe",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1aae8b12",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 7,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
