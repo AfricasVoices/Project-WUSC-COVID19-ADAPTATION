@@ -4,6 +4,54 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-e84a67e2",
+      "CodeType": "Normal",
+      "DisplayText": "lost livelihoods",
+      "NumericValue": 0,
+      "StringValue": "lost_livelihoods",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ce99b4e0",
+      "CodeType": "Normal",
+      "DisplayText": "stress and hopelessness",
+      "NumericValue": 1,
+      "StringValue": "stress_and_hopelessness",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-b08afd1d",
+      "CodeType": "Normal",
+      "DisplayText": "no socialisation",
+      "NumericValue": 2,
+      "StringValue": "no_socialisation",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-199dd201",
+      "CodeType": "Normal",
+      "DisplayText": "increase in immoral behavior",
+      "NumericValue": 3,
+      "StringValue": "increase_in_immoral_behavior",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-43af00c4",
+      "CodeType": "Normal",
+      "DisplayText": "family separation",
+      "NumericValue": 4,
+      "StringValue": "family_separation",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-2611192b",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 5,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
