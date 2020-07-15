@@ -4,6 +4,54 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-5969ad18",
+      "CodeType": "Normal",
+      "DisplayText": "mental effects",
+      "NumericValue": 0,
+      "StringValue": "mental_effects",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-6527be04",
+      "CodeType": "Normal",
+      "DisplayText": "general impacts",
+      "NumericValue": 1,
+      "StringValue": "general_impacts",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-15dc395a",
+      "CodeType": "Normal",
+      "DisplayText": "stress and hopelessness",
+      "NumericValue": 2,
+      "StringValue": "stress_and_hopelessness",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ad3c6ab1",
+      "CodeType": "Normal",
+      "DisplayText": "increase in immoral behaviour",
+      "NumericValue": 3,
+      "StringValue": "increase_in_immoral_behaviour",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-029cd0e9",
+      "CodeType": "Normal",
+      "DisplayText": "positive impact",
+      "NumericValue": 4,
+      "StringValue": "positive_impact",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-00d3b90d",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 5,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",

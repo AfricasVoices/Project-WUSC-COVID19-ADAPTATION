@@ -4,6 +4,62 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-1d09789d",
+      "CodeType": "Normal",
+      "DisplayText": "stop early/forced marriage",
+      "NumericValue": 0,
+      "StringValue": "stop_early_forced_marriage",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f88fbb4d",
+      "CodeType": "Normal",
+      "DisplayText": "awareness creation",
+      "NumericValue": 1,
+      "StringValue": "awareness_creation",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-b1795fcc",
+      "CodeType": "Normal",
+      "DisplayText": "cooperation between parents and stakeholders",
+      "NumericValue": 2,
+      "StringValue": "cooperation_between_parents_and_stakeholders",
+      "VisibleInCoda": true
+    },
+        {
+      "CodeID": "code-76f65c2a",
+      "CodeType": "Normal",
+      "DisplayText": "parental guidance",
+      "NumericValue": 3,
+      "StringValue": "parental_guidance",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ac2b8cb3",
+      "CodeType": "Normal",
+      "DisplayText": "religious education",
+      "NumericValue": 4,
+      "StringValue": "religious_education",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-7971e9b4",
+      "CodeType": "Normal",
+      "DisplayText": "monitoring girls' actions/behaviours",
+      "NumericValue": 5,
+      "StringValue": "monitoring_girls_actions_behaviours",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1c537f07",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 6,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
