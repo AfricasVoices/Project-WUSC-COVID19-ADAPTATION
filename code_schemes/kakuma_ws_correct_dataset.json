@@ -323,6 +323,28 @@
       ]
     },
     {
+      "CodeID": "code-b576be7e",
+      "CodeType": "Normal",
+      "DisplayText": "covid19 adaptation kakuma homeschooling support",
+      "StringValue": "covid19_adaptation_kakuma_homeschooling_support",
+      "NumericValue": 30,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "covid19 adaptation kakuma homeschooling support"
+      ]
+    },
+    {
+      "CodeID": "code-9999ba0c",
+      "CodeType": "Normal",
+      "DisplayText": "covid19 adaptation kakuma show suggestions",
+      "StringValue": "covid19_adaptation_kakuma_show_suggestions",
+      "NumericValue": 31,
+      "VisibleInCoda": true,
+      "MatchValues": [
+        "covid19 adaptation kakuma show suggestions"
+      ]
+    },
+    {
       "CodeID": "code-NC-42f1d983",
       "CodeType": "Control",
       "ControlCode": "NC",
