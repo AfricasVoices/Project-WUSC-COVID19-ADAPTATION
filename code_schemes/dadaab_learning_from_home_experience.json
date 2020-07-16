@@ -4,6 +4,38 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-5969ad18",
+      "CodeType": "Normal",
+      "DisplayText": "it is working",
+      "NumericValue": 0,
+      "StringValue": "it_is_working",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-74ed1829",
+      "CodeType": "Normal",
+      "DisplayText": "it adds no value",
+      "NumericValue": 1,
+      "StringValue": "it_adds_no_value",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ccbca4d0",
+      "CodeType": "Normal",
+      "DisplayText": "challenging experience",
+      "NumericValue": 2,
+      "StringValue": "challenging_experience",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f3b6fc4c",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 3,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",

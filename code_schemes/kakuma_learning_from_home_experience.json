@@ -4,6 +4,62 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-385b88f5",
+      "CodeType": "Normal",
+      "DisplayText": "it is working",
+      "NumericValue": 0,
+      "StringValue": "it_is_working",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-81ce992e",
+      "CodeType": "Normal",
+      "DisplayText": "challenging experience",
+      "NumericValue": 2,
+      "StringValue": "challenging_experience",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3883fa7f",
+      "CodeType": "Normal",
+      "DisplayText": "domestic chore burden/distractions",
+      "NumericValue": 3,
+      "StringValue": "domestic_chore_burden_distractions",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-dd781b7b",
+      "CodeType": "Normal",
+      "DisplayText": "lack of resources",
+      "NumericValue": 4,
+      "StringValue": "lack_of_resources",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-8447b256",
+      "CodeType": "Normal",
+      "DisplayText": "lack of commitment",
+      "NumericValue": 5,
+      "StringValue": "lack_of_commitment",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-0d4806d3",
+      "CodeType": "Normal",
+      "DisplayText": "early pregnancies",
+      "NumericValue": 6,
+      "StringValue": "early_pregnancies",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1fdab8e7",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 7,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",

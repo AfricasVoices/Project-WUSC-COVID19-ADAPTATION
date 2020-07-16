@@ -4,6 +4,78 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-d6d6e91f",
+      "CodeType": "Normal",
+      "DisplayText": "awareness creation",
+      "NumericValue": 0,
+      "StringValue": "awareness_creation",
+      "VisibleInCoda": true
+    },
+        {
+      "CodeID": "code-e6cf4c25",
+      "CodeType": "Normal",
+      "DisplayText": "parental guidance",
+      "NumericValue": 1,
+      "StringValue": "parental_guidance",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-5d00e357",
+      "CodeType": "Normal",
+      "DisplayText": "legal action",
+      "NumericValue": 2,
+      "StringValue": "legal_action",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-bcee9ae2",
+      "CodeType": "Normal",
+      "DisplayText": "ban pornography",
+      "NumericValue": 3,
+      "StringValue": "ban_pornography",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a739653e",
+      "CodeType": "Normal",
+      "DisplayText": "keep them busy",
+      "NumericValue": 4,
+      "StringValue": "keep_them_busy",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c7c20fdc",
+      "CodeType": "Normal",
+      "DisplayText": "role models/motivation",
+      "NumericValue": 5,
+      "StringValue": "role_models_motivation",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-51b89ea7",
+      "CodeType": "Normal",
+      "DisplayText": "re-open schools",
+      "NumericValue": 6,
+      "StringValue": "re_open_schools",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-0bd4a550",
+      "CodeType": "Normal",
+      "DisplayText": "providing basic necessities",
+      "NumericValue": 7,
+      "StringValue": "providing_basic_necessities",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-e200088a",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 8,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
