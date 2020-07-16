@@ -732,7 +732,7 @@ class PipelineConfiguration(object):
                            coded_field="dadaab_show_suggestions_coded",
                            analysis_file_key="dadaab_show_suggestions_",
                            fold_strategy=lambda x, y: FoldStrategies.list_of_labels(
-                               CodeSchemes.DADAAB_HOMESCHOOLING_SUPPORT, x, y)
+                               CodeSchemes.DADAAB_SHOW_SUGGESTIONS, x, y)
                        )
                    ],
                    ws_code=CodeSchemes.DADAAB_WS_CORRECT_DATASET_SCHEME.get_code_with_match_value(
