@@ -29,8 +29,8 @@ DATASETS=(
     "kakuma_s01e09"
     "kakuma_s01e10"
     "kakuma_learning_from_home_experience"
-    "dadaab_homeschooling_support"
-    "dadaab_show_suggestions"
+    "kakuma_homeschooling_support"
+    "kakuma_show_suggestions"
 )
 
 for DATASET in ${DATASETS[@]}
