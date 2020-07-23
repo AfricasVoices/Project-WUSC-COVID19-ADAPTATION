@@ -44,6 +44,12 @@ class CodeSchemes(object):
     KAKUMA_LEARNING_FROM_HOME_EXPERIENCE = _open_scheme("kakuma_learning_from_home_experience.json")
     DADAAB_LEARNING_FROM_HOME_EXPERIENCE = _open_scheme("dadaab_learning_from_home_experience.json")
 
+    KAKUMA_HOMESCHOOLING_SUPPORT = _open_scheme("kakuma_homeschooling_support.json")
+    DADAAB_HOMESCHOOLING_SUPPORT = _open_scheme("dadaab_homeschooling_support.json")
+
+    KAKUMA_SHOW_SUGGESTIONS = _open_scheme("kakuma_show_suggestions.json")
+    DADAAB_SHOW_SUGGESTIONS = _open_scheme("dadaab_show_suggestions.json")
+
     WS_CORRECT_DATASET_SCHEME = None
     KAKUMA_WS_CORRECT_DATASET_SCHEME = _open_scheme("kakuma_ws_correct_dataset.json")
     DADAAB_WS_CORRECT_DATASET_SCHEME = _open_scheme("dadaab_ws_correct_dataset.json")

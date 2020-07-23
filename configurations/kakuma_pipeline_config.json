@@ -20,7 +20,9 @@
       "SurveyFlowNames": [
         "wusc_keep_ii_kakuma_demogs",
         "wusc_covid19_adaptation_kakuma_demogs",
-        "wusc_covid19_adaptation_s01_w7_kakuma_follow_up"
+        "wusc_covid19_adaptation_s01_w7_kakuma_follow_up",
+        "kakuma_covid19_adaptation_s01_evaluation_flow"
+
       ],
       "TestContactUUIDs": [
         "84f1c3bc-596e-455e-b5f6-ce16640e9b95",
@@ -94,7 +96,13 @@
     {"RapidProKey": "Household_Language (Time) - wusc_covid19_adaptation_kakuma_demogs", "PipelineKey": "household_language_time"},
 
     {"RapidProKey": "Learning_Experience_From_Home (Time) - wusc_covid19_adaptation_s01_w7_kakuma_follow_up", "PipelineKey": "learning_from_home_experience_time"},
-    {"RapidProKey": "Learning_Experience_From_Home (Text) - wusc_covid19_adaptation_s01_w7_kakuma_follow_up", "PipelineKey": "learning_from_home_experience_raw"}
+    {"RapidProKey": "Learning_Experience_From_Home (Text) - wusc_covid19_adaptation_s01_w7_kakuma_follow_up", "PipelineKey": "learning_from_home_experience_raw"},
+
+    {"RapidProKey": "Homeschooling_Support (Time) - kakuma_covid19_adaptation_s01_evaluation_flow", "PipelineKey": "homeschooling_support_time"},
+    {"RapidProKey": "Homeschooling_Support (Text) - kakuma_covid19_adaptation_s01_evaluation_flow", "PipelineKey": "homeschooling_support_raw"},
+
+    {"RapidProKey": "Covid19_Show_Suggestions (Time) - kakuma_covid19_adaptation_s01_evaluation_flow", "PipelineKey": "show_suggestions_time"},
+    {"RapidProKey": "Covid19_Show_Suggestions (Text) - kakuma_covid19_adaptation_s01_evaluation_flow", "PipelineKey": "show_suggestions_raw"}
   ],
   "PipelineName": "kakuma_pipeline",
   "ProjectStartDate": "2020-05-05T00:00:00+03:00",

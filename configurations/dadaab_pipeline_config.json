@@ -20,7 +20,8 @@
       "SurveyFlowNames": [
         "wusc_keep_ii_dadaab_demogs",
         "wusc_covid19_adaptation_dadaab_demogs",
-        "wusc_covid19_adaptation_s01_w7_dadaab_follow_up"
+        "wusc_covid19_adaptation_s01_w7_dadaab_follow_up",
+        "dadaab_covid19_adaptation_s01_evaluation_flow"
       ],
       "TestContactUUIDs": [
         "f3e07a4a-4c5d-4032-80f3-c31bcf480dc9",
@@ -95,7 +96,13 @@
     {"RapidProKey": "Household_Language (Time) - wusc_covid19_adaptation_dadaab_demogs", "PipelineKey": "household_language_time"},
 
     {"RapidProKey": "Learning_Experience_From_Home (Time) - wusc_covid19_adaptation_s01_w7_dadaab_follow_up", "PipelineKey": "learning_from_home_experience_time"},
-    {"RapidProKey": "Learning_Experience_From_Home (Text) - wusc_covid19_adaptation_s01_w7_dadaab_follow_up", "PipelineKey": "learning_from_home_experience_raw"}
+    {"RapidProKey": "Learning_Experience_From_Home (Text) - wusc_covid19_adaptation_s01_w7_dadaab_follow_up", "PipelineKey": "learning_from_home_experience_raw"},
+
+    {"RapidProKey": "Homeschooling_Support (Time) - dadaab_covid19_adaptation_s01_evaluation_flow", "PipelineKey": "homeschooling_support_time"},
+    {"RapidProKey": "Homeschooling_Support (Text) - dadaab_covid19_adaptation_s01_evaluation_flow", "PipelineKey": "homeschooling_support_raw"},
+
+    {"RapidProKey": "Covid19_Show_Suggestions (Time) - dadaab_covid19_adaptation_s01_evaluation_flow", "PipelineKey": "show_suggestions_time"},
+    {"RapidProKey": "Covid19_Show_Suggestions (Text) - dadaab_covid19_adaptation_s01_evaluation_flow", "PipelineKey": "show_suggestions_raw"}
 
   ],
   "PipelineName": "dadaab_pipeline",

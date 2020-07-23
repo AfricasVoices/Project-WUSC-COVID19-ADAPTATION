@@ -545,6 +545,44 @@ class PipelineConfiguration(object):
                    ],
                    ws_code=CodeSchemes.KAKUMA_WS_CORRECT_DATASET_SCHEME.get_code_with_match_value(
                        "covid19 adaptation kakuma learning from home experience"),
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
+
+        CodingPlan(raw_field="homeschooling_support_raw",
+                   dataset_name="kakuma_homeschooling_support",
+                   time_field="homeschooling_support_time",
+                   coda_filename="kakuma_homeschooling_support.json",
+                   icr_filename="kakuma_homeschooling_support.csv",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.MULTIPLE,
+                           code_scheme=CodeSchemes.KAKUMA_HOMESCHOOLING_SUPPORT,
+                           coded_field="kakuma_homeschooling_support_coded",
+                           analysis_file_key="kakuma_homeschooling_support_",
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(
+                               CodeSchemes.KAKUMA_HOMESCHOOLING_SUPPORT, x, y)
+                       )
+                   ],
+                   ws_code=CodeSchemes.KAKUMA_WS_CORRECT_DATASET_SCHEME.get_code_with_match_value(
+                       "covid19 adaptation kakuma homeschooling support"),
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
+
+        CodingPlan(raw_field="show_suggestions_raw",
+                   dataset_name="kakuma_show_suggestions",
+                   time_field="show_suggestions_time",
+                   coda_filename="kakuma_show_suggestions.json",
+                   icr_filename="kakuma_show_suggestions.csv",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.MULTIPLE,
+                           code_scheme=CodeSchemes.KAKUMA_SHOW_SUGGESTIONS,
+                           coded_field="kakuma_show_suggestions_coded",
+                           analysis_file_key="kakuma_show_suggestions_",
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(
+                               CodeSchemes.KAKUMA_SHOW_SUGGESTIONS, x, y)
+                       )
+                   ],
+                   ws_code=CodeSchemes.KAKUMA_WS_CORRECT_DATASET_SCHEME.get_code_with_match_value(
+                       "covid19 adaptation kakuma show suggestions"),
                    raw_field_fold_strategy=FoldStrategies.concatenate)
     ]
 
@@ -661,6 +699,44 @@ class PipelineConfiguration(object):
                    ],
                    ws_code=CodeSchemes.DADAAB_WS_CORRECT_DATASET_SCHEME.get_code_with_match_value(
                        "covid19 adaptation dadaab learning from home experience"),
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
+
+        CodingPlan(raw_field="homeschooling_support_raw",
+                   dataset_name="dadaab_homeschooling_support",
+                   time_field="homeschooling_support_time",
+                   coda_filename="dadaab_homeschooling_support.json",
+                   icr_filename="dadaab_homeschooling_support.csv",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.MULTIPLE,
+                           code_scheme=CodeSchemes.DADAAB_HOMESCHOOLING_SUPPORT,
+                           coded_field="dadaab_homeschooling_support_coded",
+                           analysis_file_key="dadaab_homeschooling_support_",
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(
+                               CodeSchemes.DADAAB_HOMESCHOOLING_SUPPORT, x, y)
+                       )
+                   ],
+                   ws_code=CodeSchemes.DADAAB_WS_CORRECT_DATASET_SCHEME.get_code_with_match_value(
+                       "covid19 adaptation dadaab homeschooling support"),
+                   raw_field_fold_strategy=FoldStrategies.concatenate),
+
+        CodingPlan(raw_field="show_suggestions_raw",
+                   dataset_name="dadaab_show_suggestions",
+                   time_field="show_suggestions_time",
+                   coda_filename="dadaab_show_suggestions.json",
+                   icr_filename="dadaab_show_suggestions.csv",
+                   coding_configurations=[
+                       CodingConfiguration(
+                           coding_mode=CodingModes.MULTIPLE,
+                           code_scheme=CodeSchemes.DADAAB_SHOW_SUGGESTIONS,
+                           coded_field="dadaab_show_suggestions_coded",
+                           analysis_file_key="dadaab_show_suggestions_",
+                           fold_strategy=lambda x, y: FoldStrategies.list_of_labels(
+                               CodeSchemes.DADAAB_SHOW_SUGGESTIONS, x, y)
+                       )
+                   ],
+                   ws_code=CodeSchemes.DADAAB_WS_CORRECT_DATASET_SCHEME.get_code_with_match_value(
+                       "covid19 adaptation dadaab show suggestions"),
                    raw_field_fold_strategy=FoldStrategies.concatenate)
     ]
 

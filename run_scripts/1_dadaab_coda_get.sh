@@ -31,6 +31,8 @@ DATASETS=(
     "dadaab_s01e09"
     "dadaab_s01e10"
     "dadaab_learning_from_home_experience"
+    "dadaab_homeschooling_support"
+    "dadaab_show_suggestions"
 )
 
 for DATASET in ${DATASETS[@]}
