@@ -4,6 +4,54 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-593af94e",
+      "CodeType": "Normal",
+      "DisplayText": "covid prevention guidelines",
+      "NumericValue": 0,
+      "StringValue": "covid_prevention_guidelines",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-55b27a82",
+      "CodeType": "Normal",
+      "DisplayText": "parents should support children's learning at home",
+      "NumericValue": 1,
+      "StringValue": "parents_should_support_childrens_learning_at_home",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ecd863f6",
+      "CodeType": "Normal",
+      "DisplayText": "learning from home is challenging",
+      "NumericValue": 2,
+      "StringValue": "learning_from_home_is_challenging",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-85fa9845",
+      "CodeType": "Normal",
+      "DisplayText": "effect of unwanted pregnancy",
+      "NumericValue": 3,
+      "StringValue": "effect_of_unwanted_pregnancy",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-cb61793d",
+      "CodeType": "Normal",
+      "DisplayText": "teachers are important in learning",
+      "NumericValue": 4,
+      "StringValue": "teachers_are_important_in_learning",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-6bcd4e65",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 5,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",

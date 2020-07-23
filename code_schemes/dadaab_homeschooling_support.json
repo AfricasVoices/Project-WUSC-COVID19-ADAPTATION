@@ -4,6 +4,46 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-f0cfa62e",
+      "CodeType": "Normal",
+      "DisplayText": "train children on using social media to learn",
+      "NumericValue": 0,
+      "StringValue": "train_children_on_using_social_media_to_learn",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-71ae88e6",
+      "CodeType": "Normal",
+      "DisplayText": "general beneficial knowledge",
+      "NumericValue": 1,
+      "StringValue": "general_beneficial_knowledge",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-01aa7be3",
+      "CodeType": "Normal",
+      "DisplayText": "need for cooperation between parents and children",
+      "NumericValue": 2,
+      "StringValue": "need_for_cooperation_between_parents_and_children",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-144266d3",
+      "CodeType": "Normal",
+      "DisplayText": "religious studies",
+      "NumericValue": 3,
+      "StringValue": "religious_studies",
+      "VisibleInCoda": true
+    },
+     {
+      "CodeID": "code-8a7ad4d7",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 4,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",

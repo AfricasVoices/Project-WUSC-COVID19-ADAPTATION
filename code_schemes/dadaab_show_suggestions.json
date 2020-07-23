@@ -4,6 +4,46 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-8864d3b1",
+      "CodeType": "Normal",
+      "DisplayText": "continuity of radio programmes",
+      "NumericValue": 0,
+      "StringValue": "continuity_of_radio_programmes",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c105a245",
+      "CodeType": "Normal",
+      "DisplayText": "wider awareness creation",
+      "NumericValue": 1,
+      "StringValue": "wider_awareness_creation",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3ee7cb84",
+      "CodeType": "Normal",
+      "DisplayText": "include religious programmes",
+      "NumericValue": 2,
+      "StringValue": "include_religious_programmes",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1bb9b63c",
+      "CodeType": "Normal",
+      "DisplayText": "broaden coverage of programmes",
+      "NumericValue": 3,
+      "StringValue": "broaden_coverage_of_programmes",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-98c88916",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 4,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
