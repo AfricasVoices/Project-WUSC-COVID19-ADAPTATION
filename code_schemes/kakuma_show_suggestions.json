@@ -4,6 +4,38 @@
   "Version": "0.0.0.1",
   "Codes": [
     {
+      "CodeID": "code-a40f6b46",
+      "CodeType": "Normal",
+      "DisplayText": "avail more educational resources",
+      "NumericValue": 0,
+      "StringValue": "avail_more_educational_resources",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-33a56862",
+      "CodeType": "Normal",
+      "DisplayText": "broaden coverage of programmes",
+      "NumericValue": 1,
+      "StringValue": "broaden_coverage_of_programmes",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1bb9b63c",
+      "CodeType": "Normal",
+      "DisplayText": "use different languages",
+      "NumericValue": 2,
+      "StringValue": "use_different_languages",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-4aec39b6",
+      "CodeType": "Normal",
+      "DisplayText": "other",
+      "NumericValue": 3,
+      "StringValue": "other",
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
