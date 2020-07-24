@@ -499,7 +499,7 @@ if __name__ == "__main__":
     log.info(f"Excluded {no_of_dns_messages} unsafe to share messages")
 
     with open(f"{automated_analysis_output_dir}/safe_to_share_messages.csv", "w") as f:
-        headers = ["Episode", "Code", "Raw Message"]
+        headers = ["Question", "Code", "Raw Message"]
         writer = csv.DictWriter(f, fieldnames=headers, lineterminator="\n")
         writer.writeheader()
 
