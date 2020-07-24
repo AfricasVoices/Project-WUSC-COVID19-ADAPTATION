@@ -61,14 +61,16 @@ if __name__ == "__main__":
         PipelineConfiguration.RQA_CODING_PLANS = PipelineConfiguration.DADAAB_RQA_CODING_PLANS
         PipelineConfiguration.DEMOG_CODING_PLANS = PipelineConfiguration.DADAAB_DEMOG_CODING_PLANS
         PipelineConfiguration.SURVEY_CODING_PLANS = PipelineConfiguration.DADAAB_SURVEY_CODING_PLANS
-        CodeSchemes.DADAAB_WS_CORRECT_DATASET_SCHEME = CodeSchemes.KAKUMA_WS_CORRECT_DATASET_SCHEME
+        PipelineConfiguration.FOLLOW_UP_CODING_PLANS = PipelineConfiguration.DADAAB_FOLLOW_UP_SURVEY_CODING_PLANS
+        CodeSchemes.WS_CORRECT_DATASET_SCHEME = CodeSchemes.DADAAB_WS_CORRECT_DATASET_SCHEME
     else:
         assert pipeline_configuration.pipeline_name == "kakuma_pipeline", "PipelineName must be either " \
                                                                           "'dadaab_pipeline or kakuma_pipeline"
-        log.info("Extracting Kakuma pipeline data")
+        log.info("Running Kakuma pipeline")
         PipelineConfiguration.RQA_CODING_PLANS = PipelineConfiguration.KAKUMA_RQA_CODING_PLANS
         PipelineConfiguration.DEMOG_CODING_PLANS = PipelineConfiguration.KAKUMA_DEMOG_CODING_PLANS
         PipelineConfiguration.SURVEY_CODING_PLANS = PipelineConfiguration.KAKUMA_SURVEY_CODING_PLANS
+        PipelineConfiguration.FOLLOW_UP_CODING_PLANS = PipelineConfiguration.KAKUMA_FOLLOW_UP_SURVEY_CODING_PLANS
         CodeSchemes.WS_CORRECT_DATASET_SCHEME = CodeSchemes.KAKUMA_WS_CORRECT_DATASET_SCHEME
 
     # Read the messages dataset
@@ -215,7 +217,7 @@ if __name__ == "__main__":
         survey_counts = OrderedDict()
         survey_counts["Total Participants"] = 0
         survey_counts["Total Participants %"] = None
-        for plan in PipelineConfiguration.SURVEY_CODING_PLANS:
+        for plan in PipelineConfiguration.DEMOG_CODING_PLANS:
             for cc in plan.coding_configurations:
                 if cc.analysis_file_key is None:
                     continue
@@ -229,7 +231,7 @@ if __name__ == "__main__":
         return survey_counts
 
     def update_survey_counts(survey_counts, td):
-        for plan in PipelineConfiguration.SURVEY_CODING_PLANS:
+        for plan in PipelineConfiguration.DEMOG_CODING_PLANS:
             for cc in plan.coding_configurations:
                 if cc.analysis_file_key is None:
                     continue
@@ -252,7 +254,7 @@ if __name__ == "__main__":
             survey_counts["Total Participants %"] = \
                 round(survey_counts["Total Participants"] / total_survey_counts["Total Participants"] * 100, 1)
 
-        for plan in PipelineConfiguration.SURVEY_CODING_PLANS:
+        for plan in PipelineConfiguration.DEMOG_CODING_PLANS:
             for cc in plan.coding_configurations:
                 if cc.analysis_file_key is None:
                     continue
@@ -271,7 +273,7 @@ if __name__ == "__main__":
                             round(code_count / code_total * 100, 1)
 
     episodes = OrderedDict()
-    for episode_plan in PipelineConfiguration.RQA_CODING_PLANS:
+    for episode_plan in PipelineConfiguration.RQA_CODING_PLANS + PipelineConfiguration.FOLLOW_UP_CODING_PLANS :
         # Prepare empty counts of the survey responses for each variable
         themes = OrderedDict()
         episodes[episode_plan.raw_field] = themes

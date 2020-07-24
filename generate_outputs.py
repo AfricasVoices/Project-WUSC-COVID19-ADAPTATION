@@ -70,6 +70,7 @@ if __name__ == "__main__":
         PipelineConfiguration.RQA_CODING_PLANS = PipelineConfiguration.DADAAB_RQA_CODING_PLANS
         PipelineConfiguration.DEMOG_CODING_PLANS = PipelineConfiguration.DADAAB_DEMOG_CODING_PLANS
         PipelineConfiguration.SURVEY_CODING_PLANS = PipelineConfiguration.DADAAB_SURVEY_CODING_PLANS
+        PipelineConfiguration.FOLLOW_UP_CODING_PLANS = PipelineConfiguration.DADAAB_FOLLOW_UP_SURVEY_CODING_PLANS
         CodeSchemes.WS_CORRECT_DATASET_SCHEME = CodeSchemes.DADAAB_WS_CORRECT_DATASET_SCHEME
     else:
         assert pipeline_configuration.pipeline_name == "kakuma_pipeline", "PipelineName must be either " \
@@ -78,6 +79,7 @@ if __name__ == "__main__":
         PipelineConfiguration.RQA_CODING_PLANS = PipelineConfiguration.KAKUMA_RQA_CODING_PLANS
         PipelineConfiguration.DEMOG_CODING_PLANS = PipelineConfiguration.KAKUMA_DEMOG_CODING_PLANS
         PipelineConfiguration.SURVEY_CODING_PLANS = PipelineConfiguration.KAKUMA_SURVEY_CODING_PLANS
+        PipelineConfiguration.FOLLOW_UP_CODING_PLANS = PipelineConfiguration.KAKUMA_FOLLOW_UP_SURVEY_CODING_PLANS
         CodeSchemes.WS_CORRECT_DATASET_SCHEME = CodeSchemes.KAKUMA_WS_CORRECT_DATASET_SCHEME
 
     log.info("Loading the raw data...")
