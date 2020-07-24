@@ -465,7 +465,7 @@ if __name__ == "__main__":
     log.info("Exporting safe to share raw messages for each episode...")
     safe_to_share_messages = []  # of dict of code_string_value to raw messages
     no_of_dns_messages = 0
-    for plan in PipelineConfiguration.RQA_CODING_PLANS[5:]: # Loop through episode 6 -> because previous episodes had been manually processed
+    for plan in PipelineConfiguration.RQA_CODING_PLANS[5:] + PipelineConfiguration.FOLLOW_UP_CODING_PLANS: # Loop through episode 6 -> & followups because previous episodes had been manually processed
         for cc in plan.coding_configurations:
             code_to_messages = OrderedDict()
             for code in cc.code_scheme.codes:
@@ -489,7 +489,7 @@ if __name__ == "__main__":
             for code_string_value in code_to_messages:
                 for msg in code_to_messages[code_string_value]:
                     safe_to_share_messages.append({
-                        "Episode": plan.dataset_name,
+                        "Question": plan.dataset_name,
                         "Code": code_string_value,
                         "Raw Message": msg
                     })
