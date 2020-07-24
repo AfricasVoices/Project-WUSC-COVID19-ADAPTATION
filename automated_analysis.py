@@ -66,7 +66,7 @@ if __name__ == "__main__":
     else:
         assert pipeline_configuration.pipeline_name == "kakuma_pipeline", "PipelineName must be either " \
                                                                           "'dadaab_pipeline or kakuma_pipeline"
-        log.info("Running Kakuma pipeline")
+        log.info("Extracting Kakuma pipeline data")
         PipelineConfiguration.RQA_CODING_PLANS = PipelineConfiguration.KAKUMA_RQA_CODING_PLANS
         PipelineConfiguration.DEMOG_CODING_PLANS = PipelineConfiguration.KAKUMA_DEMOG_CODING_PLANS
         PipelineConfiguration.SURVEY_CODING_PLANS = PipelineConfiguration.KAKUMA_SURVEY_CODING_PLANS
