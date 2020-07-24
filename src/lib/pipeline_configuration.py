@@ -435,6 +435,8 @@ class PipelineConfiguration(object):
 
     SURVEY_CODING_PLANS = None
 
+    FOLLOW_UP_CODING_PLANS = None
+
     KAKUMA_DEMOG_CODING_PLANS = [
 
         CodingPlan(raw_field="location_raw",
